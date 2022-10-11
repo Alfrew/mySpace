@@ -81,7 +81,7 @@
 
 /** LANDING CONTAINER  ***************************************************************************/
 #landing {
-  min-height: 90vh;
+  min-height: 80vh;
   background-color: var(--background-primary-color);
   text-align: center;
 }
