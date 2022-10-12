@@ -1,0 +1,46 @@
+$properties: "top", "right", "bottom", "left";
+$positions: (
+  "0": 0%,
+  "50": 50%,
+  "100": 100%,
+);
+// make a class for every position in every property
+@mixin make-position-classes() {
+  @each $property in $properties {
+    @each $position-name, $position-value in $positions {
+      .#{$property}-#{$position-name} {
+        top: $position-value;
+      }
+    }
+  }
+}
+
+/** POSITION *************************************************************************************/
+.position-relative {
+  position: relative;
+}
+.position-static {
+  position: static;
+}
+.position-absolute {
+  position: absolute;
+}
+.position-fixed {
+  position: fixed;
+}
+.sticky-top {
+  position: sticky;
+  top: 0;
+}
+
+@include make-position-classes();
+
+.translate-middle {
+  transform: translate(-50%, -50%);
+}
+.translate-middle-x {
+  transform: translateX(-50);
+}
+.translate-middle-y {
+  transform: translateY(-50);
+}

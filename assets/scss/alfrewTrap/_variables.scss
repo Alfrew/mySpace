@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap");
+
+//** COLORS ***************************************************************************************
+// main colors
+$main-color: #e15537;
+$accent-color: #520dc2;
+$background-color: #ffffff;
+// support colors
+$main-color-tint: #fecba1;
+$main-color-shade: #653208;
+$main-color-vibrant: #fc6701;
+$main-text-contrast: #ffffff;
+$background-text-contrast: #000000;
+// neutral colors
+$light-grey: #eeeeee;
+$dark-grey: #666666;
+$darker-grey: #333333;
+// alert colors
+$error-color: #ff0000;
+$warning-color: #ffc107;
+$success-color: #198754;
+
+//** UNITS ****************************************************************************************
+$spacing-unit: 8px;
+$transition-time-unit: 250ms;
+
+//** TEXT *****************************************************************************************
+$font-family: "Inter Tight", sans-serif;
+// Body
+$font-size-short: var(--font-size-short);
+$font-size-regular: var(--font-size-regular);
+$font-size-long: var(--font-size-long);
+// Headings
+$font-size-h1: var(--font-size-h1);
+$font-size-h2: var(--font-size-h2);
+$font-size-h3: var(--font-size-h3);
+$font-size-h4: var(--font-size-h4);
+// Utils
+$font-size-btn: var(--font-size-btn);
+$font-size-link: var(--font-size-link);
+$font-size-UI: var(--font-size-UI);
+$font-size-headUI: var(--font-size-headUI);
+
+//** MEDIA QUERIES ********************************************************************************
+// min-width screen sizes
+$smartphone: 576px; //sm
+$tablet-portrait: 768px; //md
+$tablet-landscape: 992px; //lg
+$desktop: 1200px; //xl
+$tv: 1400px; //xxl
+$points: "sm", "md", "lg", "xl", "xxl";
+// mixin for media querie implementetion
+@mixin for-size($point) {
+  @if $point == sm {
+    @media screen and (min-width: $smartphone) {
+      @content;
+    }
+  } @else if $point == md {
+    @media screen and (min-width: $tablet-portrait) {
+      @content;
+    }
+  } @else if $point == lg {
+    @media screen and (min-width: $tablet-landscape) {
+      @content;
+    }
+  } @else if $point == xl {
+    @media screen and (min-width: $desktop) {
+      @content;
+    }
+  } @else if $point == xxl {
+    @media screen and (min-width: $tv) {
+      @content;
+    }
+  }
+}
+// make the same class through all break-points
+@mixin make-classes($class) {
+  .#{$class} {
+    @content;
+  }
+  @each $point in $points {
+    @include for-size($point) {
+      .#{$class}-#{$point} {
+        @content;
+      }
+    }
+  }
+}
+
+//** MEDIA QUERIES VARIABLES  *********************************************************************
+// From 0px to...
+:root {
+  // Text-sizes
+  --font-size-short: 20px;
+  --font-size-regular: 16px;
+  --font-size-long: 14px;
+  --font-size-h1: 40px;
+  --font-size-h2: 32px;
+  --font-size-h3: 26px;
+  --font-size-h4: 22px;
+  --font-size-btn: 16px;
+  --font-size-link: 14px;
+  --font-size-UI: 10px;
+  --font-size-headUI: 22px;
+}
+// From "var" to max-width
+@media screen and (min-width: $tablet-landscape) {
+  :root {
+    // Text-sizes
+    --font-size-short: 24px;
+    --font-size-regular: 18px;
+    --font-size-long: 16px;
+    --font-size-h1: 56px;
+    --font-size-h2: 40px;
+    --font-size-h3: 32px;
+    --font-size-h4: 26px;
+    --font-size-btn: 16px;
+    --font-size-link: 14px;
+    --font-size-UI: 14px;
+    --font-size-headUI: 26px;
+  }
+}

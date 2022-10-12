@@ -6,10 +6,10 @@
   --border-color: rgb(220, 220, 220);
   --muted-color: rgb(200, 200, 200);
 
-  --accent-main-color: #FF7E1D;
+  --accent-main-color: #e15537;
   --contrast-text-color: hwb(0 100% 0%);
-  --accent-text-color: #FE6700;
-  --accent-secondary-color: #FFA441;
+  --accent-shade-color: #653208c9;
+  --accent-tint-color: #fecba1ca;
 }
 
 [data-theme="dark"] {
@@ -20,34 +20,43 @@
   --border-color: rgb(60, 60, 60);
   --muted-color: rgb(90, 90, 90);
 
-  --accent-main-color: #A373C7;
+  --accent-main-color: #a373c7;
   --contrast-text-color: hwb(0 100% 0%);
-  --accent-text-color: hwb(270 50% 0%);
-  --accent-secondary-color: #FAF7F2;
+  --accent-shade-color: hwb(270 50% 0%);
+  --accent-tint-color: #a341ff;
 }
 
 * {
   box-sizing: border-box;
-  font-size: 1.2rem;
+  font-size: 24px;
+  font-family: "Inter Tight", sans-serif;
+}
+html {
+  color: var(--text-secondary-color);
 }
 
-.mainTitle {
+.main-title {
   margin-bottom: 16px;
-  font-size: 2.5rem;
-  font-weight: bolder;
-  color: var(--accent-text-color);
+  font-size: 56px;
+  font-weight: bold;
+  color: var(--accent-main-color);
 }
 
 .title {
   margin-bottom: 16px;
-  font-size: 2rem;
-  font-weight: bolder;
+  font-size: 40px;
+  font-weight: bold;
   color: var(--contrast-text-color);
 }
 
 .subtitle {
-  font-size: 1.8rem;
   margin-bottom: 16px;
+  font-size: 32px;
+  color: var(--text-secondary-color);
+}
+
+.paragraph {
+  margin-bottom: 8px;
 }
 
 .text-center {
@@ -64,11 +73,9 @@
   transform: rotate(15deg) scale(120%);
 }
 
-
+/** HEADER CONTAINER  ****************************************************************************/
 #header {
-  position: sticky;
-  top: 0;
-  height: 64px;
+  height: 72px;
   background-color: var(--accent-main-color);
   box-shadow: 0px 1px 10px 0px var(--background-primary-color);
   color: var(--contrast-text-color);
@@ -92,41 +99,46 @@
 
 #iconList .bi {
   font-size: 32px;
-  color: var(--accent-text-color);
+  color: var(--accent-main-color);
   transition: all 300ms;
 }
 
 #iconList .bi:hover {
-  color: var(--accent-secondary-color);
+  color: var(--accent-tint-color);
   font-size: 48px;
-}
-
-#bubbles {
-  height: 300px;
-  background-color: var(--accent-secondary-color);
-  background-image: url('../img/BubblesWhite.svg');
 }
 
 /** ABOUT ME CONTAINER  **************************************************************************/
 #me {
-  background-color: var(--accent-secondary-color);
-  min-height: 70vh;
-  padding: 40px 0px;
+  background-image: linear-gradient(var(--accent-tint-color), var(--accent-tint-color)), url(https://www.tilingtextures.com/wp-content/uploads/2017/03/0501_.jpg);
+  background-color: var(--accent-tint-color);
   color: var(--contrast-text-color);
+}
+#bubbles {
+  height: 300px;
+  background-image: url("../img/BubblesWhite.svg");
+}
+#meContainer {
+  min-height: 100vh;
+  padding: 40px 0px;
 }
 
 /** MY WORK CONTAINER  ***************************************************************************/
 #myWork {
-  background-color: var(--accent-main-color);
-  min-height: 70vh;
+  background-image: linear-gradient(var(--accent-shade-color), var(--accent-shade-color)), url(https://www.tilingtextures.com/wp-content/uploads/2017/03/0509.jpg);
+  /* background-color: var(--accent-shade-color); */
+  min-height: 100vh;
   padding: 40px 0px;
   color: var(--contrast-text-color);
 }
 
 /** PORTFOLIO CONTAINER  *************************************************************************/
+#portfolio {
+  background-color: var(--background-primary-color);
+  padding: 40px 0px;
+}
 #portfolio .title {
-  background-color: var(--accent-main-color);
-  /* box-shadow: inset 0px -15px 10px -10px var(--background-primary-color); */
+  color: var(--accent-main-color);
 }
 
 #label {
@@ -135,47 +147,47 @@
   border-top-left-radius: 28px;
   border-top-right-radius: 28px;
   background-color: var(--background-primary-color);
-  color: var(--accent-text-color);
+  color: var(--accent-main-color);
   /* box-shadow: 0px 0px 10px 5px var(--background-primary-color); */
 }
 
-#project-list {
+#projectList {
   min-height: 50vh;
 }
 
 .project-title {
   margin-bottom: 8px;
   font-size: 28px;
-  color: var(--accent-text-color);
+  color: var(--accent-main-color);
 }
 
 .project-role {
   display: inline-block;
   border-radius: 24px;
   padding: 8px;
-  background-color: var(--accent-main-color);
+  background-color: var(--accent-shade-color);
   font-weight: bold;
   color: var(--contrast-text-color);
 }
 
 /** FOOTER CONTAINER  ****************************************************************************/
 #footer {
-  background-color: var(--accent-text-color);
-  height: 80px;
+  background-color: var(--accent-shade-color);
+  min-height: 10vh;
 }
 
-#footer-list li {
+#footerList li {
   margin: 0px 16px;
   font-size: 20px;
   color: var(--contrast-text-color);
 }
 
-#footer-list a {
+#footerList a {
   color: var(--contrast-text-color);
   text-decoration: none;
 }
 
-#footer-list a:hover {
+#footerList a:hover {
   color: var(--contrast-text-color);
   text-decoration: underline wavy;
 }
