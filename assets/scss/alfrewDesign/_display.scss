@@ -1,0 +1,103 @@
+/** DISPLAY **************************************************************************************/
+@each $point in $points {
+  $infix: $point;
+  @if $point != "" {
+    $infix: "-#{$point}";
+  }
+  @include for-size($point) {
+    .d-block#{$infix} {
+      display: block;
+    }
+    .d-inline#{$infix} {
+      display: inline;
+    }
+    .d-inline-block#{$infix} {
+      display: inline-block;
+    }
+    .d-none#{$infix} {
+      display: none;
+    }
+    .d-flex#{$infix} {
+      display: flex;
+    }
+
+    /* Y axis alignment */
+    .align-baseline#{$infix} {
+      align-items: baseline;
+    }
+    .align-center#{$infix} {
+      align-items: center;
+    }
+    .align-end#{$infix} {
+      align-items: flex-end;
+    }
+    .align-start#{$infix} {
+      align-items: flex-start;
+    }
+
+    /* X axis alignment */
+    .justify-center#{$infix} {
+      justify-content: center;
+    }
+    .justify-end#{$infix} {
+      justify-content: flex-end;
+    }
+    .justify-start#{$infix} {
+      justify-content: flex-start;
+    }
+    .justify-around#{$infix} {
+      justify-content: space-around;
+    }
+    .justify-between#{$infix} {
+      justify-content: space-between;
+    }
+    .justify-evenly#{$infix} {
+      justify-content: space-evenly;
+    }
+
+    /* Direction */
+    .flex-column#{$infix} {
+      flex-direction: column;
+    }
+    .flex-column-reverse#{$infix} {
+      flex-direction: column-reverse;
+    }
+    .flex-row#{$infix} {
+      flex-direction: row;
+    }
+    .flex-row-reverse#{$infix} {
+      flex-direction: row-reverse;
+    }
+
+    /* Row */
+    .row#{$infix} {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      height: 100%;
+    }
+  }
+}
+
+/* Col system */
+@mixin make-col-list() {
+  @for $i from 1 to 12 {
+    .col-#{$i} {
+      min-width: calc($i * 8.33%);
+      width: calc($i * 8.33%);
+    }
+  }
+  @each $point in $points {
+    @if $point != "" {
+      @include for-size($point) {
+        @for $i from 1 to 12 {
+          .col-#{$i}-#{$point} {
+            min-width: calc($i * 8.33%);
+            width: calc($i * 8.33%);
+          }
+        }
+      }
+    }
+  }
+}
+@include make-col-list();

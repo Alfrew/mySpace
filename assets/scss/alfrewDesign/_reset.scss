@@ -46,3 +46,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+  font-size: $font-size-body2;
+  font-family: $font-family;
+}

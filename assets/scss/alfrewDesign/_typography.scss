@@ -1,0 +1,68 @@
+.h1 {
+  margin-bottom: $spacing-unit * 2;
+  line-height: $line-height-headings;
+  font-size: $font-size-h1;
+  font-weight: bold;
+}
+.h2 {
+  @extend .h1;
+  font-size: $font-size-h2;
+}
+.h3 {
+  @extend .h1;
+  font-size: $font-size-h3;
+}
+.h4 {
+  @extend .h1;
+  font-size: $font-size-h4;
+}
+
+.body1 {
+  font-size: $font-size-body1;
+  line-height: $line-height-body;
+}
+.body2 {
+  @extend .body1;
+  font-size: $font-size-body2;
+}
+.body3 {
+  @extend .body1;
+  font-size: $font-size-body3;
+}
+
+.color-main {
+  color: $main-color;
+}
+.color-accent {
+  color: $accent-color;
+}
+.color-main-vibrant {
+  color: $main-color-vibrant;
+}
+.color-main-tint {
+  color: $main-color-tint;
+}
+.color-main-shade {
+  color: $main-color-shade;
+}
+.color-main-contrast {
+  color: $main-text-contrast;
+}
+
+@each $point in $points {
+  $infix: $point;
+  @if $point != "" {
+    $infix: "-#{$point}";
+  }
+  @include for-size($point) {
+    .text-center#{$infix} {
+      text-align: center;
+    }
+    .text-left#{$infix} {
+      text-align: left;
+    }
+    .text-right#{$infix} {
+      text-align: right;
+    }
+  }
+}

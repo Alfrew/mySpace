@@ -1,1 +1,118 @@
-@import "alfrewTrap/all.scss";
+@import "alfrewDesign/_all.scss";
+
+/** HEADER CONTAINER  ****************************************************************************/
+#header {
+  height: 72px;
+  background-color: $main-color;
+  box-shadow: 0px 1px 10px 0px $background-color;
+  color: $main-text-contrast;
+}
+
+#header a {
+  color: $main-text-contrast;
+  text-decoration: none;
+}
+
+/** LANDING CONTAINER  ***************************************************************************/
+#landing {
+  min-height: 80vh;
+  text-align: center;
+}
+
+#iconList {
+  height: 48px;
+}
+
+#iconList .bi {
+  font-size: 32px;
+  color: $main-color;
+  transition: all 300ms;
+}
+
+#iconList .bi:hover {
+  color: $main-color-tint;
+  font-size: 48px;
+}
+
+/** ABOUT ME CONTAINER  **************************************************************************/
+#me {
+  background-image: linear-gradient($main-color-tint-transpa, $main-color-tint-transpa), url(https://www.tilingtextures.com/wp-content/uploads/2017/03/0501_.jpg);
+  background-color: $main-color-tint;
+  color: $main-text-contrast;
+}
+#bubbles {
+  height: 300px;
+  background-image: url("../img/BubblesWhite.svg");
+}
+#meContainer {
+  min-height: 100vh;
+  padding: 40px 0px;
+}
+
+/** MY WORK CONTAINER  ***************************************************************************/
+#myWork {
+  background-image: linear-gradient($main-color-shade-transpa, $main-color-shade-transpa), url(https://www.tilingtextures.com/wp-content/uploads/2017/03/0509.jpg);
+  background-color: $main-color-shade;
+  min-height: 100vh;
+  padding: 40px 0px;
+  color: $main-text-contrast;
+}
+
+/** PORTFOLIO CONTAINER  *************************************************************************/
+#portfolio {
+  padding: 40px 0px;
+}
+#portfolio .title {
+  color: $main-color;
+}
+
+#label {
+  display: inline-block;
+  padding: 16px 16px 4px;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  background-color: $background-color;
+  color: $main-color;
+  /* box-shadow: 0px 0px 10px 5px $background-primary-color; */
+}
+
+#projectList {
+  min-height: 50vh;
+}
+
+.project-title {
+  margin-bottom: 8px;
+  font-size: 28px;
+  color: $main-color;
+}
+
+.project-role {
+  display: inline-block;
+  border-radius: 24px;
+  padding: 8px;
+  background-color: $main-color-shade;
+  font-weight: bold;
+  color: $main-text-contrast;
+}
+
+/** FOOTER CONTAINER  ****************************************************************************/
+#footer {
+  background-color: $main-color-shade;
+  min-height: 10vh;
+}
+
+#footerList li {
+  margin: 0px 16px;
+  font-size: 20px;
+  color: $main-text-contrast;
+}
+
+#footerList a {
+  color: $main-text-contrast;
+  text-decoration: none;
+}
+
+#footerList a:hover {
+  color: $main-text-contrast;
+  text-decoration: underline wavy;
+}

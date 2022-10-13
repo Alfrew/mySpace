@@ -1,0 +1,20 @@
+// Rotate and scale-up a bit when you pass over with the mouse
+.hover-tilt {
+  cursor: pointer;
+  transition: all $transition-time-unit;
+
+  &:hover {
+    transform: rotate(15deg) scale(120%);
+  }
+}
+
+// Fade-in when you pass over the parent with the mouse
+.fade-parent {
+  .fade-item {
+    opacity: 0;
+    transition: opacity $transition-time-unit * 2;
+  }
+  &:hover .fade-item {
+    opacity: 1;
+  }
+}

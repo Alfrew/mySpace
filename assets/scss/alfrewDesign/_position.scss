@@ -16,11 +16,11 @@ $positions: (
 }
 
 /** POSITION *************************************************************************************/
-.position-relative {
-  position: relative;
-}
 .position-static {
   position: static;
+}
+.position-relative {
+  position: relative;
 }
 .position-absolute {
   position: absolute;
@@ -28,19 +28,40 @@ $positions: (
 .position-fixed {
   position: fixed;
 }
-.sticky-top {
+.position-sticky {
+  position: sticky;
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
+@include make-querie-classes("sticky-top") {
   position: sticky;
   top: 0;
+  z-index: 1020;
 }
 
 @include make-position-classes();
 
 .translate-middle {
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 .translate-middle-x {
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50);
 }
 .translate-middle-y {
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50);
 }

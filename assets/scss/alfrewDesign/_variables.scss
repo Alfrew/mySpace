@@ -2,13 +2,13 @@
 
 //** COLORS ***************************************************************************************
 // main colors
-$main-color: #e15537;
+$main-color: #e35639;
 $accent-color: #520dc2;
 $background-color: #ffffff;
 // support colors
-$main-color-tint: #fecba1;
-$main-color-shade: #653208;
-$main-color-vibrant: #fc6701;
+$main-color-tint: mix(white, $main-color, 50%);
+$main-color-shade: mix(black, $main-color, 35%);
+$main-color-vibrant: saturate($main-color, 100%);
 $main-text-contrast: #ffffff;
 $background-text-contrast: #000000;
 // neutral colors
@@ -19,6 +19,14 @@ $darker-grey: #333333;
 $error-color: #ff0000;
 $warning-color: #ffc107;
 $success-color: #198754;
+// transparent colors
+$amount-transpa: 0.2;
+$main-color-transpa: transparentize($main-color, $amount-transpa);
+$accent-color-transpa: transparentize($accent-color, $amount-transpa);
+$background-color-transpa: transparentize($background-color, $amount-transpa);
+$main-color-tint-transpa: transparentize($main-color-tint, $amount-transpa);
+$main-color-shade-transpa: transparentize($main-color-shade, $amount-transpa);
+$main-color-vibrant-transpa: transparentize($main-color-vibrant, $amount-transpa);
 
 //** UNITS ****************************************************************************************
 $spacing-unit: 8px;
@@ -26,10 +34,11 @@ $transition-time-unit: 250ms;
 
 //** TEXT *****************************************************************************************
 $font-family: "Inter Tight", sans-serif;
+// FONT-SIZES
 // Body
-$font-size-short: var(--font-size-short);
-$font-size-regular: var(--font-size-regular);
-$font-size-long: var(--font-size-long);
+$font-size-body1: var(--font-size-body1);
+$font-size-body2: var(--font-size-body2);
+$font-size-body3: var(--font-size-body3);
 // Headings
 $font-size-h1: var(--font-size-h1);
 $font-size-h2: var(--font-size-h2);
@@ -40,6 +49,9 @@ $font-size-btn: var(--font-size-btn);
 $font-size-link: var(--font-size-link);
 $font-size-UI: var(--font-size-UI);
 $font-size-headUI: var(--font-size-headUI);
+// LINE-HEIGHTS
+$line-height-headings: 1.125em;
+$line-height-body: 1.3em;
 
 //** MEDIA QUERIES ********************************************************************************
 // min-width screen sizes
@@ -48,7 +60,7 @@ $tablet-portrait: 768px; //md
 $tablet-landscape: 992px; //lg
 $desktop: 1200px; //xl
 $tv: 1400px; //xxl
-$points: "sm", "md", "lg", "xl", "xxl";
+$points: "", "sm", "md", "lg", "xl", "xxl";
 // mixin for media querie implementetion
 @mixin for-size($point) {
   @if $point == sm {
@@ -71,17 +83,21 @@ $points: "sm", "md", "lg", "xl", "xxl";
     @media screen and (min-width: $tv) {
       @content;
     }
+  } @else {
+    @content;
   }
 }
 // make the same class through all break-points
-@mixin make-classes($class) {
+@mixin make-querie-classes($class) {
   .#{$class} {
     @content;
   }
   @each $point in $points {
-    @include for-size($point) {
-      .#{$class}-#{$point} {
-        @content;
+    @if $point != "" {
+      @include for-size($point) {
+        .#{$class}-#{$point} {
+          @content;
+        }
       }
     }
   }
@@ -91,9 +107,9 @@ $points: "sm", "md", "lg", "xl", "xxl";
 // From 0px to...
 :root {
   // Text-sizes
-  --font-size-short: 20px;
-  --font-size-regular: 16px;
-  --font-size-long: 14px;
+  --font-size-body1: 20px;
+  --font-size-body2: 16px;
+  --font-size-body3: 14px;
   --font-size-h1: 40px;
   --font-size-h2: 32px;
   --font-size-h3: 26px;
@@ -107,9 +123,9 @@ $points: "sm", "md", "lg", "xl", "xxl";
 @media screen and (min-width: $tablet-landscape) {
   :root {
     // Text-sizes
-    --font-size-short: 24px;
-    --font-size-regular: 18px;
-    --font-size-long: 16px;
+    --font-size-body1: 24px;
+    --font-size-body2: 18px;
+    --font-size-body3: 16px;
     --font-size-h1: 56px;
     --font-size-h2: 40px;
     --font-size-h3: 32px;
