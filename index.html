@@ -5,32 +5,41 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alfredo Filigheddu Web Developer landing page">
   <title>Alfredo Filigheddu</title>
-  <link rel="shortcut icon" href="assets/img/alfrew.svg" type="image/x-icon">
+  <!-- <link rel="shortcut icon" href="assets/img/alfrew.svg" type="image/x-icon"> -->
   <link type='text/css' rel="stylesheet" href="assets/scss/style.css">
   <link type='text/css' rel='stylesheet'
     href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css'>
 </head>
 
 <body class="bg-background">
-  <header id="header" class="sticky-top">
-    <nav class="row justify-between">
-      <div>
-        <img src="" alt="">
-      </div>
-      <ul class="d-flex justify-evenly">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html">About</a></li>
-        <li><a href="index.html">Portfolio</a></li>
+  <header class="sticky-top">
+    <nav class="navbar-expand-lg">
+      <a class="nav-brand" href="index.html">Brand</a>
+      <label for="navRoundCheck" class="fixed-top invisible">Burger menu</label>
+      <input id="navRoundCheck" class="nav-check" type="checkbox">
+      <ul class="burger-wrap">
+        <li class="line1"></li>
+        <li class="line2"></li>
+        <li class="line3"></li>
       </ul>
+      <div class="dot"></div>
+      <div class="navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section id="landing" class="d-flex align-center justify-center">
+    <div id="landing" class="d-flex align-center justify-center position-relative">
       <div>
-        <h1 class="h1 color-main">Alfredo Filigheddu</h1>
-        <p class="h3">Artigiano del web</p>
+        <h1 class="h1 color-main-contrast">Alfredo Filigheddu</h1>
+        <p class="h3 color-darker-gray">Artigiano del web</p>
 
         <ul id="iconList" class="d-flex justify-evenly">
           <li>
@@ -53,16 +62,16 @@
           </li> -->
         </ul>
       </div>
-    </section>
+    </div>
+    <div id="bubbles""></div>
 
-    <section id="me">
-      <div id="bubbles"></div>
+    <section id=" me">
       <div id="meContainer" class="row justify-evenly">
-        <div class="col-11 col-4-lg text-center">
-          My Foto
+        <div class="col-11 col-4-md d-none d-flex-md">
+          <img class="responsive-pic" src="assets/img/DSC05563.JPG" alt="Alfredo Filigheddu Portrait">
         </div>
 
-        <div class="col-11 col-5-lg col-4-xl">
+        <div class="col-11 col-5-md col-4-xl">
           <h2 class="h2">Ciao! Mi chiamo Alfredo.<br />
             Sono un <em>Web Designer</em> & <em>Front-End Developer</em>.
           </h2>
@@ -73,54 +82,54 @@
           </p>
         </div>
       </div>
-    </section>
+      </section>
 
-    <section id="myWork" class="row justify-evenly">
-      <div class="col-11 col-6-lg col-4-xl">
-        <h2 class="h2">Aiuto le imprese ad entrare nel web</h2>
-        <div>
-          <p class="body1">
-            Mi sono specializzato nella creazione di siti web per professionisti e piccole imprese. <br>
-            La tua impresa è unica e come tale necessità di un sito che ne esalti le caratteristiche e che lasci la
-            giusta impressione ai tuoi nuovi clienti. <br>
-            Per questo sconsiglio l'utilizzo di soluzioni a buon mercato che renderanno il tuo nuovo sito uno come
-            tanti. <br>
-            Io, come un artigiano confezionerò un sito su misura per te e la tua impresa, seguendoti passo dopo passo
-            durante tutto il processo.
-          </p>
+      <section id="myWork" class="row justify-evenly">
+        <div class="col-11 col-6-lg col-4-xl">
+          <h2 class="h2">Aiuto le imprese ad entrare nel web</h2>
+          <div>
+            <p class="body1">
+              Mi sono specializzato nella creazione di siti web per professionisti e piccole imprese. <br>
+              La tua impresa è unica e come tale necessità di un sito che ne esalti le caratteristiche e che lasci la
+              giusta impressione ai tuoi nuovi clienti. <br>
+              Per questo sconsiglio l'utilizzo di soluzioni a buon mercato che renderanno il tuo nuovo sito uno come
+              tanti. <br>
+              Io, come un artigiano confezionerò un sito su misura per te e la tua impresa, seguendoti passo dopo passo
+              durante tutto il processo.
+            </p>
 
+          </div>
         </div>
-      </div>
 
-      <div class="col-11 col-4-lg text-center">
-        Picture
-      </div>
-    </section>
+        <div class="col-11 col-4-lg  d-none d-flex-md">
+          Picture
+        </div>
+      </section>
 
-    <section id="portfolio" class="text-center">
-      <h3 class="h2 text-center">Alcuni dei miei lavori migliori</h3>
-      <ul id="projectList" class="row justify-around">
+      <section id="portfolio" class="text-center">
+        <h3 class="h2 text-center">Alcuni dei miei lavori migliori</h3>
+        <ul id="projectList" class="row justify-around">
 
-        <li class="text-center col-11 col-5-sm col-4-lg col-3-xl">
-          <div id="AlexPileri" class="hover-tilt">SITE ICON</div>
-          <h3 class="project-title">ALEX PILERI</h3>
-          <p class="project-role">Web design/development</p>
-        </li>
+          <li class="text-center col-11 col-5-sm col-4-lg col-3-xl">
+            <div id="AlexPileri" class="hover-tilt">SITE ICON</div>
+            <h3 class="project-title">ALEX PILERI</h3>
+            <p class="project-role">Web design/development</p>
+          </li>
 
-        <li class="text-center col-11 col-5-sm col-4-lg col-3-xl">
-          <div id="Elettrosarda" class="hover-tilt">SITE ICON</div>
-          <h3 class="project-title">ELETTROSARDA</h3>
-          <p class="project-role">Web design/development</p>
-        </li>
-      </ul>
-    </section>
+          <li class="text-center col-11 col-5-sm col-4-lg col-3-xl">
+            <div id="Elettrosarda" class="hover-tilt">SITE ICON</div>
+            <h3 class="project-title">ELETTROSARDA</h3>
+            <p class="project-role">Web design/development</p>
+          </li>
+        </ul>
+      </section>
   </main>
 
   <footer id="footer" class="d-flex justify-center align-center">
     <ul id="footerList" class="row justify-evenly">
       <li><a href="index.html">Home</a></li>
-      <li><a href="index.html">About</a></li>
-      <li><a href="index.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
       <li>&copy;2022 Alfredo Filigheddu</li>
     </ul>
   </footer>

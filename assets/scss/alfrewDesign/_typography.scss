@@ -48,6 +48,9 @@
 .color-main-contrast {
   color: $main-text-contrast;
 }
+.color-darker-gray {
+  color: $darker-grey;
+}
 
 @each $point in $points {
   $infix: $point;

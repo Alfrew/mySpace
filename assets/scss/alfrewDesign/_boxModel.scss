@@ -1,0 +1,9 @@
+@mixin make-spacing() {
+  @for $i from 1 to 6 {
+    .mb-#{$i} {
+      margin-bottom: $spacing-unit * $i;
+    }
+  }
+}
+
+@include make-spacing()

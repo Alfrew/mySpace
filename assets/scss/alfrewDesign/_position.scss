@@ -9,7 +9,7 @@ $positions: (
   @each $property in $properties {
     @each $position-name, $position-value in $positions {
       .#{$property}-#{$position-name} {
-        top: $position-value;
+        #{$property}: $position-value;
       }
     }
   }
