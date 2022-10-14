@@ -15,7 +15,7 @@
 
 /** LANDING CONTAINER  ***************************************************************************/
 #landing {
-  height: 90vh;
+  min-height: 600px;
   text-align: center;
   background-color: $main-color;
 }
@@ -30,14 +30,18 @@
   transition: all 300ms;
 }
 
-#iconList .bi:hover {
-  color: $main-color-tint;
-  font-size: 48px;
+@include for-size(lg) {
+  #iconList .bi:hover {
+    color: $main-color-tint;
+    font-size: 48px;
+  }
 }
+
 #bubbles {
-  width: 100vw;
+  min-width: 100vw;
   height: 300px;
   background-image: url("../img/BubblesWhite.svg");
+  background-repeat: repeat-x;
   background-color: $main-color;
   transform: rotateX(180deg);
 }
@@ -49,7 +53,7 @@
 //   // color: $main-text-contrast;
 // }
 #meContainer {
-  min-height: 100vh;
+  min-height: 650px;
   padding: 40px 0px;
 }
 #myPic {
@@ -60,7 +64,7 @@
 #myWork {
   background-image: linear-gradient($main-color-tint-transpa, $main-color-tint-transpa), url(../img/paper.jpg);
   background-color: $main-color-shade;
-  min-height: 100vh;
+  min-height: 650px;
   padding: 40px 0px;
   color: $main-text-contrast;
 }
@@ -90,7 +94,7 @@
 .project-title {
   margin-bottom: 8px;
   font-size: 28px;
-  color: $main-color;
+  color: $main-color-vibrant;
 }
 
 .project-role {
@@ -104,7 +108,7 @@
 
 /** FOOTER CONTAINER  ****************************************************************************/
 #footer {
-  background-color: $main-color-shade;
+  background-color: $darker-grey;
   min-height: 10vh;
 }
 

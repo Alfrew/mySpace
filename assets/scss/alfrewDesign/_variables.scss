@@ -8,7 +8,7 @@ $accent-color: #520dc2;
 $background-color: #ffffff;
 // support colors
 $main-color-tint: mix(white, $main-color, 50%);
-$main-color-shade: mix(black, $main-color, 35%);
+$main-color-shade: mix(black, $main-color, 15%);
 $main-color-vibrant: saturate($main-color, 100%);
 $main-text-contrast: #ffffff;
 $background-text-contrast: #000000;
