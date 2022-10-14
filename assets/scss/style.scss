@@ -15,7 +15,7 @@
 
 /** LANDING CONTAINER  ***************************************************************************/
 #landing {
-  height: 80vh;
+  height: 90vh;
   text-align: center;
   background-color: $main-color;
 }
@@ -43,11 +43,11 @@
 }
 
 /** ABOUT ME CONTAINER  **************************************************************************/
-#me {
-  // background-image: linear-gradient($main-color-tint-transpa, $main-color-tint-transpa), url(../img/paper.jpg);
-  // background-color: $main-color-tint;
-  // color: $main-text-contrast;
-}
+// #me {
+//   // background-image: linear-gradient($main-color-tint-transpa, $main-color-tint-transpa), url(../img/paper.jpg);
+//   // background-color: $main-color-tint;
+//   // color: $main-text-contrast;
+// }
 #meContainer {
   min-height: 100vh;
   padding: 40px 0px;
