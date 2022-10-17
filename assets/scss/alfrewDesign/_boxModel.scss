@@ -3,7 +3,33 @@
     .mb-#{$i} {
       margin-bottom: $spacing-unit * $i;
     }
+    .py-#{$i} {
+      padding-top: $spacing-unit * $i;
+      padding-bottom: $spacing-unit * $i;
+    }
   }
 }
 
-@include make-spacing()
+@include make-spacing();
+
+.bg-main {
+  background-color: $main-color;
+}
+.bg-background {
+  background-color: $background-color;
+}
+.bg-main-shade {
+  background-color: $main-color-shade;
+}
+.bg-main-shade-transpa {
+  background-color: $main-color-shade-transpa;
+}
+.bg-white {
+  background-color: white;
+}
+.bg-light-grey {
+  background-color: $light-grey;
+}
+.bg-black {
+  background-color: black;
+}

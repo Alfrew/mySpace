@@ -1,20 +1,20 @@
-.h1 {
+@mixin heading($font-size) {
   margin-bottom: $spacing-unit * 2;
   line-height: $line-height-headings;
-  font-size: $font-size-h1;
+  font-size: $font-size;
   font-weight: bold;
 }
+.h1 {
+  @include heading($font-size-h1);
+}
 .h2 {
-  @extend .h1;
-  font-size: $font-size-h2;
+  @include heading($font-size-h2);
 }
 .h3 {
-  @extend .h1;
-  font-size: $font-size-h3;
+  @include heading($font-size-h3);
 }
 .h4 {
-  @extend .h1;
-  font-size: $font-size-h4;
+  @include heading($font-size-h4);
 }
 
 .body1 {
@@ -33,6 +33,12 @@
 .color-main {
   color: $main-color;
 }
+.color-white {
+  color: white;
+}
+.color-black {
+  color: black;
+}
 .color-accent {
   color: $accent-color;
 }
@@ -50,6 +56,13 @@
 }
 .color-darker-gray {
   color: $darker-grey;
+}
+
+.shadow-background-contrast {
+  text-shadow: 0px 0px 32px $background-text-contrast;
+}
+.shadow-main-contrast {
+  text-shadow: 0px 0px 32px $main-text-contrast;
 }
 
 @each $point in $points {

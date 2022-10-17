@@ -1,0 +1,30 @@
+.landing-container {
+  height: 100vh;
+}
+.landing-fixed {
+  position: fixed;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#00000050, #00000050);
+
+  .h1 {
+    font-size: calc($font-size-h1 * 2);
+  }
+}
+.landing-video {
+  position: fixed;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-color: $main-color;
+  object-fit: cover;
+}
+.main-content {
+  position: static;
+  z-index: 2;
+}
