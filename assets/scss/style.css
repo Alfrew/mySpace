@@ -974,6 +974,10 @@ a {
   margin-bottom: 8px;
 }
 
+.p-1 {
+  padding: 8px;
+}
+
 .px-1 {
   padding-left: 8px;
   padding-right: 8px;
@@ -1000,6 +1004,10 @@ a {
 .my-2 {
   margin-top: 16px;
   margin-bottom: 16px;
+}
+
+.p-2 {
+  padding: 16px;
 }
 
 .px-2 {
@@ -1030,6 +1038,10 @@ a {
   margin-bottom: 24px;
 }
 
+.p-3 {
+  padding: 24px;
+}
+
 .px-3 {
   padding-left: 24px;
   padding-right: 24px;
@@ -1058,6 +1070,10 @@ a {
   margin-bottom: 32px;
 }
 
+.p-4 {
+  padding: 32px;
+}
+
 .px-4 {
   padding-left: 32px;
   padding-right: 32px;
@@ -1084,6 +1100,10 @@ a {
 .my-5 {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.p-5 {
+  padding: 40px;
 }
 
 .px-5 {
@@ -1670,7 +1690,7 @@ a {
 
 .infinite-container {
   overflow-x: hidden;
-  min-width: 1000px;
+  min-width: 1200px;
 }
 
 .infinite-left, .infinite-right {
