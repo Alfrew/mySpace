@@ -1666,6 +1666,12 @@ a {
   text-align: center;
   background-color: #e15638;
 }
+#landing .h1 {
+  font-size: calc(var(--font-size-h1) * 1.5);
+}
+#landing .h3 {
+  font-size: calc(var(--font-size-h3) * 1.5);
+}
 
 #iconList {
   height: 48px;
