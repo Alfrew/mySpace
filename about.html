@@ -18,8 +18,8 @@
 </head>
 
 <body class="bg-background">
-  <header class="sticky-top-lg">
-    <nav class="navbar-expand-lg">
+  <header class="sticky-top-md">
+    <nav class="navbar-expand-md">
       <a class="nav-brand" href="index.html">Brand</a>
       <label for="navRoundCheck" class="fixed-top invisible">Burger menu</label>
       <input id="navRoundCheck" class="nav-check" type="checkbox">
@@ -40,16 +40,75 @@
   </header>
 
   <main>
+    <section id="meContainer" class="row justify-evenly flex-column-reverse flex-row-md">
+      <div class="col-11 col-5-md col-4-xl">
+        <h2 class="h2">Ciao! Mi chiamo Alfredo.<br />
+          Sono un <em>Web Designer</em> & <em>Front-End Developer</em>.
+        </h2>
+        <p class="body1">Ho 22 anni, vivo ad <em>Arzachena</em> e sono un <em>Web Developer</em> dal 2022.
+          Sono sempre stato una persona creativa e allo stesso tempo razionale.
+          Quando ho scoperto la programmazione Web ho capito che era la professione giusta nella quale trarre il
+          meglio da entrambi questi miei lati.
+        </p>
+      </div>
 
+      <div class="col-6 col-4-md mb-4">
+        <img class="responsive-pic round-1" src="assets/img/DSC05563.JPG" alt="Alfredo Filigheddu Portrait">
+      </div>
+    </section>
+
+    <section id="myTec" class="py-5 bg-main">
+      <h3 class="h2 color-main-contrast text-center">Il mio stack tecnologico</h3>
+    </section>
+    <section id="studies" class="py-5 bg-background">
+      <h3 class="h2 color-main text-center">Never stop learning</h3>
+    </section>
+
+    <section class="bg-darker-grey py-5">
+      <h2 class="h2 text-center color-main-contrast">Epicode Ambassador</h2>
+      <div class="row justify-evenly">
+        <img class="col-5 col-3-md round-5 my-4 responsive-pic" src="assets/img/Alfredo Filigheddu.png" alt="">
+        <p class="col-10 col-5-md body1 color-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
+          maiores
+          tempora
+          consectetur ab maxime quos
+          doloremque pariatur quis? Modi repellendus architecto sapiente inventore nihil fuga maiores dignissimos totam
+          voluptas. Perspiciatis.</p>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="polygon-bottom bg-darker-grey mb-3"></div>
+      <h3 class="h2 text-center color-main">Dicono di me</h3>
+
+      <div class="carousel"></div>
+    </section>
+
+    <section class="bg-main">
+      <div class="polygon-bottom bg-white mb-3"></div>
+      <h2 class="h2 text-center color-main-contrast">Contatti</h2>
+      <div class="row align-center justify-evenly">
+        <p class="col-10 col-5-md mb-3 body2 color-main-contrast">Lorem ipsum dolor sit amet consectetur adipisicing
+          elit.
+          Eius, itaque voluptatem autem cupiditate ducimus nulla distinctio unde, quasi debitis aperiam quisquam
+          architecto fugiat labore adipisci eveniet iusto inventore excepturi facere?
+        </p>
+        <p class="col-10 col-5-md mb-3 body2 color-main-contrast">Lorem ipsum dolor sit amet consectetur adipisicing
+          elit.
+          Eius, itaque voluptatem autem cupiditate ducimus nulla distinctio unde, quasi debitis aperiam quisquam
+          architecto fugiat labore adipisci eveniet iusto inventore excepturi facere?
+        </p>
+      </div>
+    </section>
   </main>
 
-  <footer id="footer" class="d-flex justify-center align-center">
-    <ul id="footerList" class="row justify-evenly">
+  <footer id="footer" class="d-flex flex-column justify-evenly align-center">
+    <ul id="footerList" class="row justify-evenly mb-1">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
-      <li>&copy;2022 Alfredo Filigheddu</li>
     </ul>
+    <p class="body1 color-white">&copy;2022 Alfredo Filigheddu</p>
   </footer>
 </body>
 

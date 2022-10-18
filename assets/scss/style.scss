@@ -38,7 +38,6 @@
 }
 
 #bubbles {
-  min-width: 100vw;
   height: 300px;
   background-image: url("../img/BubblesWhite.svg");
   background-repeat: repeat-x;
@@ -47,17 +46,9 @@
 }
 
 /** ABOUT ME CONTAINER  **************************************************************************/
-// #me {
-//   // background-image: linear-gradient($main-color-tint-transpa, $main-color-tint-transpa), url(../img/paper.jpg);
-//   // background-color: $main-color-tint;
-//   // color: $main-text-contrast;
-// }
 #meContainer {
   min-height: 650px;
   padding: 40px 0px;
-}
-#myPic {
-  height: 65vh;
 }
 
 /** MY WORK CONTAINER  ***************************************************************************/
@@ -127,3 +118,5 @@
   color: $main-text-contrast;
   text-decoration: underline wavy;
 }
+
+/** ABOUT ME PAGE  ****************************************************************************/

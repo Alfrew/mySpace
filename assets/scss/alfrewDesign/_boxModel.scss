@@ -3,9 +3,20 @@
     .mb-#{$i} {
       margin-bottom: $spacing-unit * $i;
     }
+    .mx-#{$i} {
+      margin-left: $spacing-unit * $i;
+      margin-right: $spacing-unit * $i;
+    }
+    .my-#{$i} {
+      margin-top: $spacing-unit * $i;
+      margin-bottom: $spacing-unit * $i;
+    }
     .py-#{$i} {
       padding-top: $spacing-unit * $i;
       padding-bottom: $spacing-unit * $i;
+    }
+    .round-#{$i} {
+      border-radius: $round-unit * $i;
     }
   }
 }
@@ -29,6 +40,9 @@
 }
 .bg-light-grey {
   background-color: $light-grey;
+}
+.bg-darker-grey {
+  background-color: $darker-grey;
 }
 .bg-black {
   background-color: black;

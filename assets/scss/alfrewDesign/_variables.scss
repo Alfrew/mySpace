@@ -59,10 +59,7 @@ $main-color-vibrant-transpa: transparentize($main-color-vibrant, $amount-transpa
 //** UNITS ****************************************************************************************
 $spacing-unit: 8px;
 $transition-time-unit: 250ms;
-$rounded-1: 5px;
-$rounded-2: 10px;
-$rounded-3: 15px;
-$rounded-4: 20px;
+$round-unit: 10%;
 
 //** TEXT *****************************************************************************************
 $font-family: "Inter Tight", sans-serif;
