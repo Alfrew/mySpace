@@ -1690,7 +1690,7 @@ a {
 
 .infinite-container {
   overflow-x: hidden;
-  min-width: 1200px;
+  min-width: 900px;
 }
 
 .infinite-left, .infinite-right {
@@ -1698,16 +1698,24 @@ a {
   position: relative;
   display: flex;
   justify-content: space-around;
-  -webkit-animation: infiniteScroll 25s infinite linear;
-          animation: infiniteScroll 25s infinite linear;
+  -webkit-animation: infiniteScroll 30s infinite linear;
+          animation: infiniteScroll 30s infinite linear;
 }
 .infinite-left > div, .infinite-right > div,
 .infinite-left > a,
 .infinite-right > a {
   text-align: center;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   transition: transform 250ms;
+}
+@media screen and (min-width: 992px) {
+  .infinite-left > div, .infinite-right > div,
+.infinite-left > a,
+.infinite-right > a {
+    width: 120px;
+    height: 120px;
+  }
 }
 .infinite-left > div:hover, .infinite-right > div:hover,
 .infinite-left > a:hover,
@@ -1717,7 +1725,7 @@ a {
 }
 
 .infinite-right {
-  animation: infiniteScroll 25s infinite linear reverse;
+  animation: infiniteScroll 30s infinite linear reverse;
 }
 
 @-webkit-keyframes infiniteScroll {

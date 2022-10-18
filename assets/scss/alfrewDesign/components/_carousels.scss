@@ -1,20 +1,24 @@
 .infinite-container {
   overflow-x: hidden;
-  min-width: 1200px;
+  min-width: 900px;
 }
 .infinite-left {
   width: 200%;
   position: relative;
   display: flex;
   justify-content: space-around;
-  animation: infiniteScroll 25s infinite linear;
+  animation: infiniteScroll 30s infinite linear;
 
   > div,
   > a {
     text-align: center;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     transition: transform $transition-time-unit;
+    @include for-size(lg) {
+      width: 120px;
+      height: 120px;
+    }
 
     &:hover {
       cursor: pointer;
@@ -24,7 +28,7 @@
 }
 .infinite-right {
   @extend .infinite-left;
-  animation: infiniteScroll 25s infinite linear reverse;
+  animation: infiniteScroll 30s infinite linear reverse;
 }
 
 @keyframes infiniteScroll {
