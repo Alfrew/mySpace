@@ -53,6 +53,8 @@ table {
 }
 body {
 	color: $background-text-contrast;
+	width: 100vw;
+	overflow-x: hidden;
 }
 a {
 	font-family: $font-family;

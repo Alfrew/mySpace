@@ -1,0 +1,37 @@
+.infinite-container {
+  overflow-x: hidden;
+  min-width: 1000px;
+}
+.infinite-left {
+  width: 200%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  animation: infiniteScroll 25s infinite linear;
+
+  > div,
+  > a {
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    transition: transform $transition-time-unit;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+}
+.infinite-right {
+  @extend .infinite-left;
+  animation: infiniteScroll 25s infinite linear reverse;
+}
+
+@keyframes infiniteScroll {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}

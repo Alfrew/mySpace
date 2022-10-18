@@ -11,6 +11,10 @@
       margin-top: $spacing-unit * $i;
       margin-bottom: $spacing-unit * $i;
     }
+    .px-#{$i} {
+      padding-left: $spacing-unit * $i;
+      padding-right: $spacing-unit * $i;
+    }
     .py-#{$i} {
       padding-top: $spacing-unit * $i;
       padding-bottom: $spacing-unit * $i;
