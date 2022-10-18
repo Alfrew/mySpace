@@ -90,8 +90,6 @@ table {
 
 body {
   color: #000000;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 a {
@@ -1132,6 +1130,10 @@ a {
 
 .bg-black {
   background-color: black;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .h1 {
