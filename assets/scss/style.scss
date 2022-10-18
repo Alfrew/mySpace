@@ -98,10 +98,6 @@
 }
 
 /** FOOTER CONTAINER  ****************************************************************************/
-#footer {
-  background-color: $darker-grey;
-  min-height: 10vh;
-}
 
 #footerList li {
   margin: 0px 16px;
@@ -120,3 +116,9 @@
 }
 
 /** ABOUT ME PAGE  ****************************************************************************/
+#epicLogo {
+  background-image: url(../img/epicode.webp);
+  height: 40px;
+  width: 40px;
+  background-size: cover;
+}

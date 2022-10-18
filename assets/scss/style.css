@@ -1859,11 +1859,6 @@ a {
 }
 
 /** FOOTER CONTAINER  ****************************************************************************/
-#footer {
-  background-color: #424242;
-  min-height: 10vh;
-}
-
 #footerList li {
   margin: 0px 16px;
   font-size: 20px;
@@ -1882,3 +1877,9 @@ a {
 }
 
 /** ABOUT ME PAGE  ****************************************************************************/
+#epicLogo {
+  background-image: url(../img/epicode.webp);
+  height: 40px;
+  width: 40px;
+  background-size: cover;
+}
