@@ -39,7 +39,8 @@
   </header>
 
   <main>
-    <section id="meContainer" class="row justify-evenly flex-column-reverse flex-row-md">
+    <!-- MY STORY SECTION -->
+    <section class="row justify-evenly flex-column-reverse flex-row-md py-5 height-650">
       <div class="col-11 col-5-md col-4-xl">
         <h2 class="h2">Ciao! Mi chiamo Alfredo.<br />
           Sono un <em>Web Designer</em> & <em>Front-End Developer</em>.
@@ -56,6 +57,7 @@
       </div>
     </section>
 
+    <!-- MY SKILLSET -->
     <section class="py-5 bg-main overflow-hidden">
       <h3 class="h2 color-main-contrast text-center">Il mio stack tecnologico</h3>
       <div class="infinite-container py-5">
@@ -107,40 +109,16 @@
       </div>
     </section>
 
-    <!-- <section class="py-5 bg-background overflow-hidden">
-      <h3 class="h2 color-main text-center">Never stop learning</h3>
-      <div class="infinite-container py-5">
-        <div class="infinite-right">
-          <div class="round-5 py-5 px-5 bg-main">5</div>
-          <div class="round-5 py-5 px-5 bg-main">4</div>
-          <div class="round-5 py-5 px-5 bg-main">3</div>
-          <div class="round-5 py-5 px-5 bg-main">2</div>
-          <a href="https://www.domestika.org/it" target="_blank" class="p-2 round-5 bg-light-grey">
-            <img class="responsive-pic round-5" src="assets/img/domestika.png" alt="Domestika">
-          </a>
-          <a href="https://epicode.com/it?utm_source=student&utm_content=filigheddualfredo@gmail.com" target="_blank"
-            class="p-2 round-5 bg-light-grey">
-            <img class="responsive-pic round-5" src="assets/img/epicode.webp" alt="Epicode">
-          </a>
-
-          <div class="round-5 py-5 px-5 bg-main">5</div>
-          <div class="round-5 py-5 px-5 bg-main">4</div>
-          <div class="round-5 py-5 px-5 bg-main">3</div>
-          <div class="round-5 py-5 px-5 bg-main">2</div>
-          <div class="round-5 py-5 px-5 bg-main">1</div>
-        </div>
-      </div>
-    </section> -->
-
+    <!-- EPICODE SECTION -->
     <section class="bg-darker-grey py-5">
       <h2 class="h2 text-center color-main-contrast d-flex align-center justify-center">
-        <a href="https://epicode.com/it?utm_source=student&utm_content=filigheddualfredo@gmail.com" class="round-5">
+        <a href="https://epicode.com/it?utm_source=student&utm_content=filigheddualfredo@gmail.com">
           <img class="round-5 mx-2" src="assets/img/epicode.webp" width="60px" alt="">
         </a>
         Epicode Ambassador
       </h2>
       <div class="row justify-evenly">
-        <img class="col-5 col-3-md round-5 my-4 responsive-pic" src="assets/img/Alfredo Filigheddu.png" alt="">
+        <img class="col-5 col-3-md round-5 my-4 responsive-pic" src="assets/img/alfredoFiligheddu.png" alt="">
         <p class="col-10 col-5-md body1 color-white">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita maiores tempora consectetur ab maxime quos
           doloremque pariatur quis? Modi repellendus architecto sapiente inventore nihil fuga maiores dignissimos totam
@@ -152,13 +130,59 @@
       </div>
     </section>
 
+    <!-- ABOUT ME SECTION -->
     <section class="bg-white">
       <div class="polygon-bottom bg-darker-grey mb-3"></div>
-      <h3 class="h2 text-center color-main">Dicono di me</h3>
+      <h3 class="h1 text-center color-main">Dicono di me</h3>
 
-      <div class="carousel"></div>
+      <div class="carousel-container">
+        <div class="carousel-btn bg-main color-white" onclick="changeSlide(-1)"><i class="bi bi-chevron-left"></i>
+        </div>
+
+        <div class="slide-container">
+
+          <div class="slide active">
+            <img class="slide-img"
+              src="https://media-exp1.licdn.com/dms/image/C4D03AQHhArLrQBR0Mg/profile-displayphoto-shrink_800_800/0/1658254807132?e=1671667200&v=beta&t=zh8EdasEEhV-V2y_wVluvfbf0laL2Cj_ia4FXAzGxgU"
+              alt="">
+            <div class="slide-text">
+              <h2 class="h3">Kevin De Girolamo</h2>
+              <p class="body2">Alfredo è una persona seria e responsabile. In ogni suo progetto inserisce tutta la sua
+                Passione e Dedizione, e nessun ostacolo è troppo grande per fermarlo!</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img class="slide-img"
+              src="https://media-exp1.licdn.com/dms/image/C5603AQE3--Y4IY1W0g/profile-displayphoto-shrink_800_800/0/1576568590751?e=1671667200&v=beta&t=pR4_H8hdUr9u2qn9ugCDyx_0QEehTNBMOmBhbp4IolU"
+              alt="">
+            <div class="slide-text">
+              <h2 class="h3">Umberto Emanuele</h2>
+              <p class="body2">Ottimo studente e ottima persona Alfredo. Simpatico, educato e veramente in gamba come
+                developer!!! E' un piacere per me aver contribuito al suo futuro successo nel campo del coding!</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img class="slide-img"
+              src="https://media-exp1.licdn.com/dms/image/D4D35AQHGZS7CwabyRw/profile-framedphoto-shrink_800_800/0/1651577376615?e=1666814400&v=beta&t=r-f10aC0IVtR11ieHlbb1LAfeyNFeKVbwQzpSZIpIso"
+              alt="">
+            <div class="slide-text">
+              <h2 class="h3">Giovanni Tassone</h2>
+              <p class="body2">Alfredo è uno sviluppatore molto avanzato e molto attento a curare i minimi dettagli.
+                Lavorare con lui è stato davvero un piacere!</p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="carousel-btn bg-main color-white" onclick="changeSlide(-1)"><i class="bi bi-chevron-right"></i>
+        </div>
+      </div>
     </section>
 
+    <!-- CONTACTS SECTION -->
     <section class="bg-main">
       <div class="polygon-bottom bg-white mb-3"></div>
       <h2 class="h2 text-center color-main-contrast">Contatti</h2>
@@ -184,6 +208,8 @@
     </ul>
     <p class="body2 color-white">&copy;2022 Alfredo Filigheddu</p>
   </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

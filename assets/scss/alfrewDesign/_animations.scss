@@ -1,10 +1,12 @@
 // Rotate and scale-up a bit when you pass over with the mouse
-.hover-tilt {
-  cursor: pointer;
-  transition: all $transition-time-unit;
+@include for-size(lg) {
+  .hover-tilt {
+    cursor: pointer;
+    transition: all $transition-time-unit;
 
-  &:hover {
-    transform: rotate(15deg) scale(120%);
+    &:hover {
+      transform: rotate(15deg) scale(120%);
+    }
   }
 }
 
