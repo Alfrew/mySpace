@@ -1134,6 +1134,10 @@ a {
   padding: 8px;
 }
 
+.pb-1 {
+  padding-bottom: 8px;
+}
+
 .px-1 {
   padding-left: 8px;
   padding-right: 8px;
@@ -1164,6 +1168,10 @@ a {
 
 .p-2 {
   padding: 16px;
+}
+
+.pb-2 {
+  padding-bottom: 16px;
 }
 
 .px-2 {
@@ -1198,6 +1206,10 @@ a {
   padding: 24px;
 }
 
+.pb-3 {
+  padding-bottom: 24px;
+}
+
 .px-3 {
   padding-left: 24px;
   padding-right: 24px;
@@ -1228,6 +1240,10 @@ a {
 
 .p-4 {
   padding: 32px;
+}
+
+.pb-4 {
+  padding-bottom: 32px;
 }
 
 .px-4 {
@@ -1262,6 +1278,10 @@ a {
   padding: 40px;
 }
 
+.pb-5 {
+  padding-bottom: 40px;
+}
+
 .px-5 {
   padding-left: 40px;
   padding-right: 40px;
@@ -1291,6 +1311,9 @@ a {
   .p-1-sm {
     padding: 8px;
   }
+  .pb-1-sm {
+    padding-bottom: 8px;
+  }
   .px-1-sm {
     padding-left: 8px;
     padding-right: 8px;
@@ -1315,6 +1338,9 @@ a {
   }
   .p-2-sm {
     padding: 16px;
+  }
+  .pb-2-sm {
+    padding-bottom: 16px;
   }
   .px-2-sm {
     padding-left: 16px;
@@ -1341,6 +1367,9 @@ a {
   .p-3-sm {
     padding: 24px;
   }
+  .pb-3-sm {
+    padding-bottom: 24px;
+  }
   .px-3-sm {
     padding-left: 24px;
     padding-right: 24px;
@@ -1366,6 +1395,9 @@ a {
   .p-4-sm {
     padding: 32px;
   }
+  .pb-4-sm {
+    padding-bottom: 32px;
+  }
   .px-4-sm {
     padding-left: 32px;
     padding-right: 32px;
@@ -1390,6 +1422,9 @@ a {
   }
   .p-5-sm {
     padding: 40px;
+  }
+  .pb-5-sm {
+    padding-bottom: 40px;
   }
   .px-5-sm {
     padding-left: 40px;
@@ -1418,6 +1453,9 @@ a {
   .p-1-md {
     padding: 8px;
   }
+  .pb-1-md {
+    padding-bottom: 8px;
+  }
   .px-1-md {
     padding-left: 8px;
     padding-right: 8px;
@@ -1442,6 +1480,9 @@ a {
   }
   .p-2-md {
     padding: 16px;
+  }
+  .pb-2-md {
+    padding-bottom: 16px;
   }
   .px-2-md {
     padding-left: 16px;
@@ -1468,6 +1509,9 @@ a {
   .p-3-md {
     padding: 24px;
   }
+  .pb-3-md {
+    padding-bottom: 24px;
+  }
   .px-3-md {
     padding-left: 24px;
     padding-right: 24px;
@@ -1493,6 +1537,9 @@ a {
   .p-4-md {
     padding: 32px;
   }
+  .pb-4-md {
+    padding-bottom: 32px;
+  }
   .px-4-md {
     padding-left: 32px;
     padding-right: 32px;
@@ -1517,6 +1564,9 @@ a {
   }
   .p-5-md {
     padding: 40px;
+  }
+  .pb-5-md {
+    padding-bottom: 40px;
   }
   .px-5-md {
     padding-left: 40px;
@@ -1545,6 +1595,9 @@ a {
   .p-1-lg {
     padding: 8px;
   }
+  .pb-1-lg {
+    padding-bottom: 8px;
+  }
   .px-1-lg {
     padding-left: 8px;
     padding-right: 8px;
@@ -1569,6 +1622,9 @@ a {
   }
   .p-2-lg {
     padding: 16px;
+  }
+  .pb-2-lg {
+    padding-bottom: 16px;
   }
   .px-2-lg {
     padding-left: 16px;
@@ -1595,6 +1651,9 @@ a {
   .p-3-lg {
     padding: 24px;
   }
+  .pb-3-lg {
+    padding-bottom: 24px;
+  }
   .px-3-lg {
     padding-left: 24px;
     padding-right: 24px;
@@ -1620,6 +1679,9 @@ a {
   .p-4-lg {
     padding: 32px;
   }
+  .pb-4-lg {
+    padding-bottom: 32px;
+  }
   .px-4-lg {
     padding-left: 32px;
     padding-right: 32px;
@@ -1644,6 +1706,9 @@ a {
   }
   .p-5-lg {
     padding: 40px;
+  }
+  .pb-5-lg {
+    padding-bottom: 40px;
   }
   .px-5-lg {
     padding-left: 40px;
@@ -1672,6 +1737,9 @@ a {
   .p-1-xl {
     padding: 8px;
   }
+  .pb-1-xl {
+    padding-bottom: 8px;
+  }
   .px-1-xl {
     padding-left: 8px;
     padding-right: 8px;
@@ -1696,6 +1764,9 @@ a {
   }
   .p-2-xl {
     padding: 16px;
+  }
+  .pb-2-xl {
+    padding-bottom: 16px;
   }
   .px-2-xl {
     padding-left: 16px;
@@ -1722,6 +1793,9 @@ a {
   .p-3-xl {
     padding: 24px;
   }
+  .pb-3-xl {
+    padding-bottom: 24px;
+  }
   .px-3-xl {
     padding-left: 24px;
     padding-right: 24px;
@@ -1747,6 +1821,9 @@ a {
   .p-4-xl {
     padding: 32px;
   }
+  .pb-4-xl {
+    padding-bottom: 32px;
+  }
   .px-4-xl {
     padding-left: 32px;
     padding-right: 32px;
@@ -1771,6 +1848,9 @@ a {
   }
   .p-5-xl {
     padding: 40px;
+  }
+  .pb-5-xl {
+    padding-bottom: 40px;
   }
   .px-5-xl {
     padding-left: 40px;
@@ -1799,6 +1879,9 @@ a {
   .p-1-xxl {
     padding: 8px;
   }
+  .pb-1-xxl {
+    padding-bottom: 8px;
+  }
   .px-1-xxl {
     padding-left: 8px;
     padding-right: 8px;
@@ -1823,6 +1906,9 @@ a {
   }
   .p-2-xxl {
     padding: 16px;
+  }
+  .pb-2-xxl {
+    padding-bottom: 16px;
   }
   .px-2-xxl {
     padding-left: 16px;
@@ -1849,6 +1935,9 @@ a {
   .p-3-xxl {
     padding: 24px;
   }
+  .pb-3-xxl {
+    padding-bottom: 24px;
+  }
   .px-3-xxl {
     padding-left: 24px;
     padding-right: 24px;
@@ -1874,6 +1963,9 @@ a {
   .p-4-xxl {
     padding: 32px;
   }
+  .pb-4-xxl {
+    padding-bottom: 32px;
+  }
   .px-4-xxl {
     padding-left: 32px;
     padding-right: 32px;
@@ -1898,6 +1990,9 @@ a {
   }
   .p-5-xxl {
     padding: 40px;
+  }
+  .pb-5-xxl {
+    padding-bottom: 40px;
   }
   .px-5-xxl {
     padding-left: 40px;
