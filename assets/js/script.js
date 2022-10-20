@@ -9,5 +9,4 @@ function changeSlide(slideIndex) {
     activeIndex = slides.length - 1;
   }
   setTimeout(() => slides[activeIndex].classList.add("active"), 500);
-  console.log(activeIndex);
 }
