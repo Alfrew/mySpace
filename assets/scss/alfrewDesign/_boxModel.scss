@@ -1,34 +1,38 @@
-@mixin make-spacing() {
-  @for $i from 1 to 6 {
-    .mb-#{$i} {
+
+  @each $point in $points {
+    $infix: $point;
+    @if $point != "" {
+      $infix: "-#{$point}";
+    }
+    @include for-size($point) { @for $i from 1 to 6 {
+    .mb-#{$i}#{$infix} {
       margin-bottom: $spacing-unit * $i;
     }
-    .mx-#{$i} {
+    .mx-#{$i}#{$infix} {
       margin-left: $spacing-unit * $i;
       margin-right: $spacing-unit * $i;
     }
-    .my-#{$i} {
+    .my-#{$i}#{$infix} {
       margin-top: $spacing-unit * $i;
       margin-bottom: $spacing-unit * $i;
     }
-    .p-#{$i} {
+    .p-#{$i}#{$infix} {
       padding: $spacing-unit * $i;
     }
-    .px-#{$i} {
+    .px-#{$i}#{$infix} {
       padding-left: $spacing-unit * $i;
       padding-right: $spacing-unit * $i;
     }
-    .py-#{$i} {
+    .py-#{$i}#{$infix} {
       padding-top: $spacing-unit * $i;
       padding-bottom: $spacing-unit * $i;
     }
-    .round-#{$i} {
+    .round-#{$i}#{$infix} {
       border-radius: $round-unit * $i;
     }
-  }
+  }}
 }
 
-@include make-spacing();
 
 .bg-main {
   background-color: $main-color;

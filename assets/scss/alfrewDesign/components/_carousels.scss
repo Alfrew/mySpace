@@ -60,7 +60,7 @@
 
 .infinite-container {
   overflow-x: hidden;
-  min-width: 900px;
+  min-width: 700px;
 }
 .infinite-left {
   width: 200%;
@@ -72,12 +72,10 @@
   > div,
   > a {
     text-align: center;
-    width: 100px;
-    height: 100px;
+    width: 80px;
     transition: transform $transition-time-unit;
     @include for-size(lg) {
       width: 120px;
-      height: 120px;
     }
 
     &:hover {
