@@ -57,6 +57,7 @@
   &:checked ~ .navbar-collapse {
     opacity: 1;
     transition: opacity 500ms 400ms;
+    text-align: center;
     .nav-item {
       display: block;
     }

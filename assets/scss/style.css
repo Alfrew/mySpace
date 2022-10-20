@@ -2039,6 +2039,7 @@ a {
 .nav-check:checked ~ .navbar-collapse {
   opacity: 1;
   transition: opacity 500ms 400ms;
+  text-align: center;
 }
 .nav-check:checked ~ .navbar-collapse .nav-item {
   display: block;
