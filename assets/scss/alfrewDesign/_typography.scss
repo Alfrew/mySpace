@@ -65,6 +65,10 @@
   text-shadow: 0px 0px 32px $main-text-contrast;
 }
 
+.text-underline {
+  text-decoration: underline;
+}
+
 @each $point in $points {
   $infix: $point;
   @if $point != "" {
