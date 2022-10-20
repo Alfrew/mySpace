@@ -2348,6 +2348,7 @@ a {
 
 .slide {
   position: absolute;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2474,12 +2475,8 @@ a {
   opacity: 1;
 }
 
-.height-650 {
-  min-height: 650px;
-}
-
-.height-500 {
-  min-height: 500px;
+.height-600 {
+  min-height: 600px;
 }
 
 /** LANDING CONTAINER  ***************************************************************************/
