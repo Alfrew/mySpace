@@ -1,0 +1,142 @@
+@mixin line($top) {
+  position: absolute;
+  top: $top;
+  right: $spacing-unit * 1.5;
+  border-radius: 20px;
+  width: $spacing-unit * 6;
+  height: 6px;
+  background-color: $darker-grey;
+}
+@mixin sizePosition($Zindex) {
+  position: fixed;
+  z-index: $Zindex;
+  top: $spacing-unit;
+  right: $spacing-unit;
+  height: $spacing-unit * 7;
+  width: $spacing-unit * 7;
+}
+
+.burger-side {
+  .line1 {
+    @include line(20px);
+    transition: top 250ms 250ms, transform 250ms;
+  }
+  .line2 {
+    @include line(33px);
+    width: $spacing-unit * 5;
+  }
+  .line3 {
+    @include line(46px);
+    width: $spacing-unit * 4;
+    transition: top 250ms 250ms, transform 250ms, width 0ms 250ms;
+  }
+}
+
+@mixin lineAnimate($rotate) {
+  top: 33px;
+  transition: transform 250ms 250ms, top 250ms, width 0ms 250ms;
+  transform: rotateZ($rotate);
+}
+
+.nav-check-side {
+  @include sizePosition(100);
+  opacity: 0;
+  margin: 0;
+
+  &:checked ~ .navbar-collapse-side {
+    right: 0;
+  }
+
+  &:checked ~ .burger-side {
+    .line1 {
+      @include lineAnimate(45deg);
+    }
+    .line2 {
+      opacity: 0;
+    }
+    .line3 {
+      @include lineAnimate(-45deg);
+      width: $spacing-unit * 6;
+    }
+  }
+}
+
+.invisible {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.navbar-collapse-side {
+  position: fixed;
+  top: 72px;
+  right: -50vw;
+  z-index: 95;
+  height: 100%;
+  width: 50vw;
+  background-color: $main-color;
+  text-align: center;
+  transition: right 500ms;
+}
+.nav-brand {
+  margin-left: $spacing-unit * 3;
+  text-decoration: none;
+  color: $main-text-contrast;
+  font-size: $font-size-h1;
+}
+.nav-item {
+  margin-bottom: $spacing-unit * 3;
+  color: $main-text-contrast;
+  font-size: $font-size-h1;
+
+  .nav-link {
+    text-decoration: none;
+    color: $main-text-contrast;
+
+    &:hover {
+      border-bottom: 5px solid $main-color;
+    }
+  }
+}
+.nav-link.active {
+  color: $main-color;
+  border-bottom: 5px solid $main-color;
+}
+
+@each $point in $points {
+  $infix: $point;
+  @if $point != "" {
+    $infix: "-#{$point}";
+  }
+  .navbar-expand-side#{$infix} {
+    background-color: $main-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    @include for-size($point) {
+      .nav-check-side,
+      .burger-side {
+        display: none;
+      }
+      .nav-brand {
+        display: inline-block;
+      }
+      .navbar-collapse-side {
+        height: auto;
+        width: auto;
+        background-color: transparent;
+        position: static;
+        transform: none;
+      }
+      .navbar-nav {
+        display: flex;
+      }
+      .nav-item {
+        display: block;
+        margin-right: $spacing-unit * 3;
+        margin-bottom: 0px;
+        font-size: $font-size-h4;
+      }
+    }
+  }
+}

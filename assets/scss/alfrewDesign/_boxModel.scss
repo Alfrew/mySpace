@@ -19,6 +19,9 @@
       .p-#{$i}#{$infix} {
         padding: $spacing-unit * $i;
       }
+      .pt-#{$i}#{$infix} {
+        padding-top: $spacing-unit * $i;
+      }
       .pb-#{$i}#{$infix} {
         padding-bottom: $spacing-unit * $i;
       }
@@ -35,6 +38,18 @@
       }
     }
   }
+}
+
+.border-bottom {
+  border-bottom: 4px solid black;
+}
+
+.border-light-grey {
+  border-color: $light-grey;
+}
+
+.h-100 {
+  height: 100%;
 }
 
 .bg-main {

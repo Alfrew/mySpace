@@ -1,30 +1,12 @@
 @mixin line($top) {
   position: absolute;
   top: $top;
-  left: $spacing-unit * 1.5;
+  right: $spacing-unit * 1.5;
   border-radius: 20px;
   width: $spacing-unit * 6;
   height: 6px;
   background-color: $darker-grey;
 }
-.line1 {
-  @include line(20px);
-  transition: top 250ms 250ms, transform 250ms;
-}
-.line2 {
-  @include line(46px);
-  transition: top 250ms 250ms, transform 250ms;
-}
-.line3 {
-  @include line(33px);
-  transition: opacity 0ms 250ms;
-}
-@mixin lineAnimate($rotate) {
-  top: 33px;
-  transition: transform 250ms 250ms, top 250ms;
-  transform: rotateZ($rotate);
-}
-
 @mixin sizePosition($Zindex) {
   position: fixed;
   z-index: $Zindex;
@@ -34,9 +16,28 @@
   width: $spacing-unit * 9;
 }
 
-.burger-wrap {
+.burger-round {
   @include sizePosition(95);
+
+  .line1 {
+    @include line(20px);
+    transition: top 250ms 250ms, transform 250ms;
+  }
+  .line2 {
+    @include line(33px);
+    transition: opacity 0ms 250ms;
+  }
+  .line3 {
+    @include line(46px);
+    transition: top 250ms 250ms, transform 250ms;
+  }
 }
+@mixin lineAnimate($rotate) {
+  top: 33px;
+  transition: transform 250ms 250ms, top 250ms;
+  transform: rotateZ($rotate);
+}
+
 .dot {
   @include sizePosition(90);
   background-color: $main-color-vibrant-transpa;
@@ -44,7 +45,7 @@
   transition: transform 450ms;
 }
 
-.nav-check {
+.nav-check-round {
   @include sizePosition(100);
   opacity: 0;
   margin: 0;
@@ -54,7 +55,7 @@
     transition: transform 900ms;
   }
 
-  &:checked ~ .navbar-collapse {
+  &:checked ~ .navbar-collapse-round {
     opacity: 1;
     transition: opacity 500ms 400ms;
     text-align: center;
@@ -63,15 +64,15 @@
     }
   }
 
-  &:checked ~ .burger-wrap {
+  &:checked ~ .burger-round {
     .line1 {
       @include lineAnimate(45deg);
     }
     .line2 {
-      @include lineAnimate(-45deg);
+      opacity: 0;
     }
     .line3 {
-      opacity: 0;
+      @include lineAnimate(-45deg);
     }
   }
 }
@@ -81,7 +82,7 @@
   pointer-events: none;
 }
 
-.navbar-collapse {
+.navbar-collapse-round {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -92,6 +93,7 @@
 }
 .nav-brand {
   display: none;
+  margin-left: $spacing-unit * 3;
   text-decoration: none;
   color: $main-text-contrast;
   font-size: $font-size-h1;
@@ -106,14 +108,14 @@
     text-decoration: none;
     color: $main-text-contrast;
 
+    &.active {
+      color: $darker-grey;
+      border-bottom: 5px solid $darker-grey;
+    }
     &:hover {
       border-bottom: 5px solid $darker-grey;
     }
   }
-}
-.nav-link.active {
-  color: $darker-grey;
-  border-bottom: 5px solid $darker-grey;
 }
 
 @each $point in $points {
@@ -122,23 +124,22 @@
     $infix: "-#{$point}";
   }
   @include for-size($point) {
-    .navbar-expand#{$infix} {
+    .navbar-expand-round#{$infix} {
       background-color: $main-color;
       display: flex;
       justify-content: space-between;
       align-items: center;
       height: 72px;
 
-      .nav-check,
+      .nav-check-round,
       .dot,
-      .burger-wrap {
+      .burger-round {
         display: none;
       }
       .nav-brand {
         display: inline-block;
-        margin-left: $spacing-unit * 3;
       }
-      .navbar-collapse {
+      .navbar-collapse-round {
         opacity: 1;
         position: static;
         transform: none;
