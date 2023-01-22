@@ -5,8 +5,20 @@
   }
   @include for-size($point) {
     @for $i from 1 to 6 {
+      .m-#{$i}#{$infix} {
+        margin: $spacing-unit * $i;
+      }
+      .mt-#{$i}#{$infix} {
+        margin-top: $spacing-unit * $i;
+      }
       .mb-#{$i}#{$infix} {
         margin-bottom: $spacing-unit * $i;
+      }
+      .ml-#{$i}#{$infix} {
+        margin-left: $spacing-unit * $i;
+      }
+      .mr-#{$i}#{$infix} {
+        margin-right: $spacing-unit * $i;
       }
       .mx-#{$i}#{$infix} {
         margin-left: $spacing-unit * $i;
@@ -24,6 +36,12 @@
       }
       .pb-#{$i}#{$infix} {
         padding-bottom: $spacing-unit * $i;
+      }
+      .pl-#{$i}#{$infix} {
+        padding-left: $spacing-unit * $i;
+      }
+      .pr-#{$i}#{$infix} {
+        padding-right: $spacing-unit * $i;
       }
       .px-#{$i}#{$infix} {
         padding-left: $spacing-unit * $i;
@@ -44,8 +62,23 @@
   border-bottom: 4px solid black;
 }
 
-.border-light-grey {
-  border-color: $light-grey;
+.border-main {
+  border-color: $main-color;
+}
+.border-accent {
+  border-color: $accent-color;
+}
+.border-light {
+  border-color: $light-color;
+}
+.border-dark {
+  border-color: $dark-color;
+}
+.border-white {
+  border-color: white;
+}
+.border-balck {
+  border-color: black;
 }
 
 .h-100 {
@@ -55,27 +88,41 @@
 .bg-main {
   background-color: $main-color;
 }
-.bg-background {
-  background-color: $background-color;
+.bg-accent {
+  background-color: $accent-color;
 }
-.bg-main-shade {
-  background-color: $main-color-shade;
+.bg-light {
+  background-color: $light-color;
 }
-.bg-main-shade-transpa {
-  background-color: $main-color-shade-transpa;
+.bg-dark {
+  background-color: $dark-color;
 }
 .bg-white {
   background-color: white;
 }
-.bg-light-grey {
-  background-color: $light-grey;
-}
-.bg-darker-grey {
-  background-color: $darker-grey;
-}
 .bg-black {
   background-color: black;
 }
+
+.bg-dark-gradient {
+  background: linear-gradient(180deg, rgba(225, 230, 234, 0) 60%, $dark-color 95%);
+}
+
+// .bg-background {
+//   background-color: $background-color;
+// }
+// .bg-main-shade {
+//   background-color: $main-color-shade;
+// }
+// .bg-main-shade-transpa {
+//   background-color: $main-color-shade-transpa;
+// }
+// .bg-light-grey {
+//   background-color: $light-grey;
+// }
+// .bg-darker-grey {
+//   background-color: $darker-grey;
+// }
 
 .overflow-hidden {
   overflow: hidden;

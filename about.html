@@ -6,21 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Alfredo Filigheddu Web Developer landing page">
-  <meta name="theme-color" content="#e35639" />
-  <title>About - Alfredo Filigheddu</title>
+  <meta name="theme-color" content="#ff6c33" />
+  <title>About - Alfredo Filigheddu Freelance Web Developer</title>
+
   <link rel="shortcut icon" href="assets/img/Logo1.svg" type="image/x-icon">
   <link rel="icon" href="assets/img/Logo2.png" sizes="32x32">
   <link rel="icon" href="assets/img/Logo2.png" sizes="192x192">
   <link rel="apple-touch-icon" sizes="192x192" href="assets/img/Logo2.png">
+
   <link type='text/css' rel="stylesheet" href="assets/scss/style.css">
   <link type='text/css' rel='stylesheet'
     href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css'>
 </head>
 
-<body class="bg-background">
-  <header class="sticky-top-md">
+<body class="bg-light">
+  <header class="sticky-top">
     <nav class="navbar-expand-round-md">
-      <a class="nav-brand" href="index.html"><img src="assets/img/Logo1.svg" width="64px" alt="Brand Logo"></a>
       <label for="navRoundCheck" class="fixed-top invisible">Burger menu</label>
       <input id="navRoundCheck" class="nav-check-round" type="checkbox">
       <ul class="burger-round">
@@ -29,15 +30,23 @@
         <li class="line3"></li>
       </ul>
       <div class="dot"></div>
+
+      <a class="nav-brand" href="index.html">
+        <div class="logo mr-1"></div>
+        <span>Alfredo <br>
+          Filigheddu
+        </span>
+      </a>
+
       <div class="navbar-collapse-round">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Work</a></li>
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About</a></li>
-          <!-- <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li> -->
-          <li class="nav-item"><a class="nav-link" href="#contacts">Contatti</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacts">Blog</a></li>
           <li class="nav-item">
-            <a class="nav-link" href="mailto:filigheddualfredo@gmail.com" target="_blank">
-              <i class="bi bi-envelope-fill"></i>
+            <a class="nav-link hollow-button border-white" href="">
+              Contattami
             </a>
           </li>
         </ul>
@@ -46,181 +55,105 @@
   </header>
 
   <main>
-    <!-- MY STORY SECTION -->
-    <section class="row justify-evenly flex-column-reverse flex-row-md py-5 height-600">
-      <div class="col-11 col-5-md col-4-xl">
-        <h2 class="h2">Ciao! Mi chiamo Alfredo.<br />
-          Sono un <em>Web Designer</em> & <em>Front-End Developer</em>.
-        </h2>
-        <p class="body1">Ho 22 anni, vivo ad <em>Arzachena</em> e sono un <em>Web Developer</em> dal 2022.
-          Sono sempre stato una persona creativa e allo stesso tempo razionale.
-          Quando ho scoperto la programmazione Web ho capito che era la professione giusta nella quale trarre il
-          meglio da entrambi questi miei lati.
-        </p>
-      </div>
+    <!-- Hero section  -->
+    <section class="bg-dark-gradient">
+      <div class="d-flex-md align-center-md justify-evenly-md flex-row-reverse">
+        <div class="col-5-md">
+          <h1 class="color-main">Front End Developer & Web Designer</h1>
+          <p class="mb-5 col-10">
+            Ciao! <br>
+            Mi chiamo Alfredo Filigheddu, <br>
+            adoro il design, la tecnologia e lavorare a progetti entusiasmanti che risaltino le persone e i loro
+            business.
+          </p>
+        </div>
 
-      <div class="col-6 col-4-md mb-4">
-        <img class="responsive-pic round-1" src="assets/img/DSC05563.JPG" alt="Alfredo Filigheddu Portrait">
+        <div class="responsive-pic bg-accent col-5-md" style="height: 570px"></div>
       </div>
     </section>
 
-    <!-- MY SKILLSET -->
-    <section class="py-5 bg-main overflow-hidden">
-      <h3 class="h2 color-main-contrast text-center">Il mio stack tecnologico</h3>
-      <div class="infinite-container py-5">
-        <div class="infinite-left">
-          <a href="https://it.wikipedia.org/wiki/HTML" target="_blank" class="p-2 p-3-lg round-5 bg-white">
-            <img class="responsive-pic" src="assets/img/html5.png" alt="HTML5">
-          </a>
-          <a href="https://it.wikipedia.org/wiki/CSS" target="_blank" class="p-2 p-3-lg round-5 bg-white">
-            <img class="responsive-pic" src="assets/img/css3.png" alt="CSS3">
-          </a>
-          <a href="https://it.wikipedia.org/wiki/JavaScript" target="_blank" class="p-2 round-5 bg-white">
-            <img class="responsive-pic" src="assets/img/javascript.webp" alt="Javascript">
-          </a>
-          <a href="https://angular.io/" target="_blank" class="p-1 round-5 bg-white">
-            <img class="responsive-pic" src="assets/img/angular.png" alt="Angular">
-          </a>
-          <a href="https://sass-lang.com/" target="_blank" class="p-1 p-2-lg round-5 bg-white">
-            <img class="responsive-pic" src="assets/img/sass.png" alt="SCSS">
-          </a>
-          <a href="https://procreate.art/" target="_blank" class="p-1 p-2-lg round-5 bg-white">
-            <img class="responsive-pic round-5" src="assets/img/procreate.png" alt="Procreate">
-          </a>
-          <a href="https://www.vectornator.io/" target="_blank" class="p-1 p-2-lg round-5 bg-white">
-            <img class="responsive-pic round-5" src="assets/img/vectornator.png" alt="Vectornator">
-          </a>
+    <!-- Servizi  -->
+    <section class="bg-dark color-light py-5">
 
-          <a href="https://it.wikipedia.org/wiki/HTML" target="_blank" class="p-2 p-3-lg round-5 bg-white">
-            <img class="responsive-pic" src="assets/img/html5.png" alt="HTML5">
-          </a>
-          <a href="https://it.wikipedia.org/wiki/CSS" target="_blank" class="p-2 p-3-lg round-5 bg-white">
-            <img class="responsive-pic" src="assets/img/css3.png" alt="CSS3">
-          </a>
-          <a href="https://it.wikipedia.org/wiki/JavaScript" target="_blank" class="p-2 round-5 bg-white">
-            <img class="responsive-pic" src="assets/img/javascript.webp" alt="Javascript">
-          </a>
-          <a href="https://angular.io/" target="_blank" class="p-1 round-5 bg-white">
-            <img class="responsive-pic" src="assets/img/angular.png" alt="Angular">
-          </a>
-          <a href="https://sass-lang.com/" target="_blank" class="p-1 p-2-lg round-5 bg-white">
-            <img class="responsive-pic" src="assets/img/sass.png" alt="SCSS">
-          </a>
-          <a href="https://procreate.art/" target="_blank" class="p-1 p-2-lg round-5 bg-white">
-            <img class="responsive-pic round-5" src="assets/img/procreate.png" alt="Procreate">
-          </a>
-          <a href="https://www.vectornator.io/" target="_blank" class="p-1 p-2-lg round-5 bg-white">
-            <img class="responsive-pic round-5" src="assets/img/vectornator.png" alt="Vectornator">
-          </a>
-        </div>
-      </div>
+      <h2 class="color-accent">Servizi</h2>
+
     </section>
 
-    <!-- EPICODE SECTION -->
-    <section class="bg-darker-grey py-5">
-      <h2 class="h2 text-center color-main-contrast d-flex align-center justify-center">
-        <a href="https://epicode.com/it?utm_source=student&utm_content=filigheddualfredo@gmail.com">
-          <img class="round-5 mx-2" src="assets/img/epicode.webp" width="60px" alt="">
-        </a>
-        Epicode Ambassador
-      </h2>
-      <div class="row justify-evenly">
-        <img class="col-5 col-3-md round-5 my-4 responsive-pic" src="assets/img/alfredoFiligheddu.png" alt="">
-        <p class="col-10 col-5-md body1 color-white">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita maiores tempora consectetur ab maxime quos
-          doloremque pariatur quis? Modi repellendus architecto sapiente inventore nihil fuga maiores dignissimos totam
-          voluptas. Perspiciatis. <br>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum amet, provident nobis reiciendis vero vitae
-          voluptatem excepturi laborum, dolorem, sit fugiat? Earum quas laudantium optio. A deleniti illo perspiciatis
-          ad!
-        </p>
-      </div>
+    <section class="bg-dark color-light">
+      <!-- Su di me -->
+      <h2 class="color-accent">Su di me</h2>
+      <p>Sono un web-designer & <b>Angular developer</b> costantemente alla ricerca di nuovi
+        entusiasmanti progetti.</p>
+
+      <p>Come persona, ho un approccio molto curioso e propositivo alla vita, mi piace migliorarmi e nel
+        frattempo aiutare gli altri a fare lo stesso!</p>
+
+      <p>Durante la settimana lavoro come sviluppatore web presso
+        <a href="https://www.abirk.com/" target="_blank">Abirk</a>, nel tempo libero
+        supporto piccole imprese a crearsi un loro spazio online utilizzando le tecnologie e strategie più avanzate.
+      </p>
+
+      <p>A seguito della pandemia decido di reinventarmi professionalmente e dedicarmi ad una delle mie
+        più grandi passioni, la tecnologia. <br>
+        Intraprendo così il corso per front end developer di
+        <a href="https://epicode.com/it?utm_source=student&utm_content=filigheddualfredo@gmail.com"
+          target="_blank">Epicode</a>. Ma questo è solo l’inizio, dopo
+        tre mesi con Epicode continuo a studiare e ampliare le mie abilità anche nel design, con corsi e video su
+        YouTube su canali come <a href="https://www.flux-academy.com/" target="_blank">Flux Academy</a>.
+      </p>
+
+      <p>A proposito di YouTube, un’altra mia grande passione è questa piattaforma, dove ho da poco
+        aperto un <a href="https://www.youtube.com/channel/UCLIJbzDooY8uqppBxe8pnKA" target="_blank">canale</a> in cui
+        parlo dei miei interessi, come la crescita personale e la produttività,
+        cercando di ispirare chi mi segue a migliorarsi un passo dopo l’altro.</p>
     </section>
 
-    <!-- ABOUT ME SECTION -->
-    <section class="bg-white height-500">
-      <div class="polygon-bottom bg-darker-grey mb-3"></div>
-      <h3 class="h1 text-center color-main">Dicono di me</h3>
-
-      <div class="carousel-container">
-        <div class="carousel-btn bg-main color-white" onclick="changeSlide(-1)">
-          <i class="bi bi-chevron-left"></i>
-        </div>
-
-        <div class="slide-container">
-          <div class="slide active">
-            <img class="slide-img"
-              src="https://media-exp1.licdn.com/dms/image/C4D03AQHhArLrQBR0Mg/profile-displayphoto-shrink_800_800/0/1658254807132?e=1671667200&v=beta&t=zh8EdasEEhV-V2y_wVluvfbf0laL2Cj_ia4FXAzGxgU"
-              alt="">
-            <div class="slide-text">
-              <h2 class="h3">Kevin De Girolamo</h2>
-              <p class="body2">Alfredo è una persona seria e responsabile. In ogni suo progetto inserisce tutta la sua
-                Passione e Dedizione, e nessun ostacolo è troppo grande per fermarlo!</p>
-            </div>
-          </div>
-
-          <div class="slide">
-            <img class="slide-img"
-              src="https://media-exp1.licdn.com/dms/image/C5603AQE3--Y4IY1W0g/profile-displayphoto-shrink_800_800/0/1576568590751?e=1671667200&v=beta&t=pR4_H8hdUr9u2qn9ugCDyx_0QEehTNBMOmBhbp4IolU"
-              alt="">
-            <div class="slide-text">
-              <h2 class="h3">Umberto Emanuele</h2>
-              <p class="body2">Ottimo studente e ottima persona Alfredo. Simpatico, educato e veramente in gamba come
-                developer!!! E' un piacere per me aver contribuito al suo futuro successo nel campo del coding!</p>
-            </div>
-          </div>
-
-          <div class="slide">
-            <img class="slide-img"
-              src="https://media-exp1.licdn.com/dms/image/D4D35AQHGZS7CwabyRw/profile-framedphoto-shrink_800_800/0/1651577376615?e=1666814400&v=beta&t=r-f10aC0IVtR11ieHlbb1LAfeyNFeKVbwQzpSZIpIso"
-              alt="">
-            <div class="slide-text">
-              <h2 class="h3">Giovanni Tassone</h2>
-              <p class="body2">Alfredo è uno sviluppatore molto avanzato e molto attento a curare i minimi dettagli.
-                Lavorare con lui è stato davvero un piacere!</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="carousel-btn bg-main color-white" onclick="changeSlide(+1)">
-          <i class="bi bi-chevron-right"></i>
-        </div>
-      </div>
+    <!-- Interessi personali -->
+    <section>
+      <h2 class="color-main">Interessi personali</h2>
     </section>
 
-    <!-- CONTACTS SECTION -->
-    <section id="contacts" class="bg-main pb-3 text-center text-left-md">
-      <div class="polygon-bottom bg-white mb-3"></div>
-      <h2 class="h2 text-center color-main-contrast">Contatti</h2>
-      <div class="row align-center justify-evenly">
-        <p class="col-10 col-3-md mb-3 body1 color-main-contrast">
-          Puoi contattarmi per espormi la tua idea o prendere un appuntamento tramite mail, cellulare o whatsapp.
-        </p>
-        <address class="col-10 col-3-md mb-3 color-main-contrast">
-          <h4 class="body1">EMAIL</h4>
-          <p><a class="color-white" href="mailto:filigheddualfredo@gmail.com">filigheddualfredo@gmail.com</a></p>
-          <h4 class="body1">CELLULARE</h4>
-          <p><a class="color-white" href="tel:+393382905566">+39 338 290 5566</a></p>
-          <h4 class="body1">INDIRIZZO</h4>
-          <p class="text-underline">Cannigione, Arzachena 07021 (SS)</p>
-        </address>
-      </div>
+    <!-- Call to action -->
+    <section class="d-flex flex-column align-center">
+      <p class="sub-title-6">Hai bisogno di un sito su misura?</p>
+      <p class="sub-title-1 uppercase color-main">Iniziamo</p>
+      <a href="/contacts.html" class="flat-button bg-dark color-light mb-1"
+        style="width: 248px; margin-right: 40px;">Prenota una call
+      </a>
+      <a href="mailto:filigheddualfredo@gmail.com" target="_blank" class="hollow-button"
+        style="width: 248px; margin-left: 40px;">Scrivimi una mail
+      </a>
     </section>
   </main>
 
-  <footer class="d-flex flex-column justify-evenly align-center py-3 bg-darker-grey">
+  <footer class="text-center color-accent">
+    <a href="index.html">
+      <div class="logo mb-5">
+      </div>
+    </a>
     <ul id="footerList" class="row justify-evenly mb-1">
       <li>
-        <a href="mailto:filigheddualfredo@gmail.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+        <a href="https://www.youtube.com/channel/UCLIJbzDooY8uqppBxe8pnKA" target="_blank">
+          <i class="bi bi-youtube color-accent"></i></a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/alfredo-filigheddu" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/alfredo-filigheddu" target="_blank"><i
+            class="bi bi-linkedin color-accent"></i></a>
       </li>
       <li>
-        <a href="https://www.github.com/Alfrew" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.github.com/Alfrew" target="_blank"><i class="bi bi-github color-accent"></i></a>
       </li>
     </ul>
-    <p class="body2 color-white">&copy;2022 Alfredo Filigheddu</p>
+
+    <hr>
+
+    <div class="mx-4">
+      <p class="mb-1">&copy; Alfredo Filigheddu</p>
+      <p>Progettato e sviluppato personalmente con <a href="https://www.figma.com" class="color-accent"
+          target="_blank">Figma</a> e
+        <a href="https://code.visualstudio.com" class="color-accent" target="_blank">Visual Studio Code</a>
+      </p>
+    </div>
   </footer>
 
   <script src="assets/js/script.js"></script>

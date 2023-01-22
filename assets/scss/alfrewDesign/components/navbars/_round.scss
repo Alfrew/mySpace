@@ -1,46 +1,46 @@
 @mixin line($top) {
   position: absolute;
   top: $top;
-  right: $spacing-unit * 1.5;
-  border-radius: 20px;
-  width: $spacing-unit * 6;
-  height: 6px;
+  right: $spacing-unit;
+  border-radius: 1px;
+  width: $spacing-unit * 4;
+  height: 4px;
   background-color: $darker-grey;
 }
 @mixin sizePosition($Zindex) {
   position: fixed;
   z-index: $Zindex;
-  top: $spacing-unit * 3;
-  right: $spacing-unit * 3;
-  height: $spacing-unit * 9;
-  width: $spacing-unit * 9;
+  top: $spacing-unit;
+  right: $spacing-unit * 2;
+  height: $spacing-unit * 6;
+  width: $spacing-unit * 6;
 }
 
 .burger-round {
   @include sizePosition(95);
 
   .line1 {
-    @include line(20px);
+    @include line(13px);
     transition: top 250ms 250ms, transform 250ms;
   }
   .line2 {
-    @include line(33px);
+    @include line(22px);
     transition: opacity 0ms 250ms;
   }
   .line3 {
-    @include line(46px);
+    @include line(31px);
     transition: top 250ms 250ms, transform 250ms;
   }
 }
 @mixin lineAnimate($rotate) {
-  top: 33px;
+  top: 22px;
   transition: transform 250ms 250ms, top 250ms;
   transform: rotateZ($rotate);
 }
 
 .dot {
   @include sizePosition(90);
-  background-color: $main-color-vibrant-transpa;
+  background-color: $main-color;
   border-radius: 100%;
   transition: transform 450ms;
 }
@@ -58,9 +58,24 @@
   &:checked ~ .navbar-collapse-round {
     opacity: 1;
     transition: opacity 500ms 400ms;
-    text-align: center;
+    font-size: 64px;
+    // text-align: center;
     .nav-item {
       display: block;
+
+      .hollow-button {
+        font-size: 32px;
+      }
+    }
+  }
+
+  &:checked ~ .nav-brand {
+    color: white;
+    transition: color 500ms 1000ms;
+    .logo {
+      background-color: white;
+
+      transition: background-color 500ms 1000ms;
     }
   }
 
@@ -92,27 +107,37 @@
   transform: translate(-50%, -50%);
 }
 .nav-brand {
-  display: none;
-  margin-left: $spacing-unit * 3;
+  position: relative;
+  z-index: 100;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-  color: $main-text-contrast;
-  font-size: $font-size-h1;
+  color: $main-color;
+  font-style: italic;
+  padding: 8px 0px;
+  margin-left: 16px;
+
+  transition: color 500ms 0ms;
+  .logo {
+    transition: background-color 500ms 0ms;
+  }
 }
 .nav-item {
   display: none;
   margin-bottom: $spacing-unit * 3;
   color: $main-text-contrast;
-  font-size: $font-size-h1;
 
   .nav-link {
     text-decoration: none;
-    color: $main-text-contrast;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
 
     &.active {
       color: $darker-grey;
       border-bottom: 5px solid $darker-grey;
     }
-    &:hover {
+    &:hover:not(.hollow-button) {
       border-bottom: 5px solid $darker-grey;
     }
   }
@@ -129,7 +154,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 72px;
 
       .nav-check-round,
       .dot,
@@ -137,7 +161,11 @@
         display: none;
       }
       .nav-brand {
-        display: inline-block;
+        color: white;
+
+        .logo {
+          background-color: white;
+        }
       }
       .navbar-collapse-round {
         opacity: 1;
@@ -146,12 +174,13 @@
       }
       .navbar-nav {
         display: flex;
+        align-items: baseline;
       }
       .nav-item {
         display: block;
-        margin-right: $spacing-unit * 3;
+        margin-right: $spacing-unit * 2;
         margin-bottom: 0px;
-        font-size: $font-size-h4;
+        font-size: 20px;
       }
     }
   }

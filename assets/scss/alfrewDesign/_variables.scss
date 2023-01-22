@@ -1,17 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 //** COLORS ***************************************************************************************
 
 // main colors
-$main-color: #e15638;
-$accent-color: #520dc2;
-$background-color: #ffffff;
+$main-color: #ff6c33;
+$accent-color: #e7a054;
+$background-color: #e1e6ea;
+$light-color: #e1e6ea;
+$dark-color: #3f4440;
 // support colors
 $main-color-tint: mix(white, $main-color, 50%);
 $main-color-shade: mix(black, $main-color, 15%);
 $main-color-vibrant: saturate($main-color, 100%);
-$main-text-contrast: #ffffff;
-$background-text-contrast: #000000;
+$main-text-contrast: #e1e6ea;
+$background-text-contrast: #3f4440;
 // neutral colors
 $light-grey: #eaeaea;
 $dark-grey: #666666;
@@ -35,7 +37,7 @@ $transition-time-unit: 250ms;
 $round-unit: 10%;
 
 //** TEXT *****************************************************************************************
-$font-family: "Inter Tight", sans-serif;
+$font-family: "Roboto", sans-serif;
 // FONT-SIZES
 // Body
 $font-size-body1: var(--font-size-body1);
@@ -45,7 +47,13 @@ $font-size-body3: var(--font-size-body3);
 $font-size-h1: var(--font-size-h1);
 $font-size-h2: var(--font-size-h2);
 $font-size-h3: var(--font-size-h3);
-$font-size-h4: var(--font-size-h4);
+// Sub-titles
+$font-size-st1: var(--font-size-st1);
+$font-size-st2: var(--font-size-st2);
+$font-size-st3: var(--font-size-st3);
+$font-size-st4: var(--font-size-st4);
+$font-size-st5: var(--font-size-st5);
+$font-size-st6: var(--font-size-st6);
 // Utils
 $font-size-btn: var(--font-size-btn);
 $font-size-link: var(--font-size-link);
@@ -109,13 +117,17 @@ $points: "", "sm", "md", "lg", "xl", "xxl";
 // From 0px to...
 :root {
   // Text-sizes
-  --font-size-body1: 20px;
-  --font-size-body2: 16px;
-  --font-size-body3: 14px;
-  --font-size-h1: 40px;
-  --font-size-h2: 32px;
-  --font-size-h3: 26px;
-  --font-size-h4: 22px;
+  --font-size-body1: 16px;
+  --font-size-body2: 12px;
+  --font-size-h1: 48px;
+  --font-size-h2: 40px;
+  --font-size-h3: 24px;
+  --font-size-st1: 64px;
+  --font-size-st2: 56px;
+  --font-size-st3: 48px;
+  --font-size-st4: 32px;
+  --font-size-st5: 24px;
+  --font-size-st6: 16px;
   --font-size-btn: 16px;
   --font-size-link: 14px;
   --font-size-UI: 10px;
@@ -125,13 +137,17 @@ $points: "", "sm", "md", "lg", "xl", "xxl";
 @media screen and (min-width: $tablet-landscape) {
   :root {
     // Text-sizes
-    --font-size-body1: 24px;
-    --font-size-body2: 18px;
-    --font-size-body3: 16px;
-    --font-size-h1: 56px;
-    --font-size-h2: 40px;
-    --font-size-h3: 32px;
-    --font-size-h4: 26px;
+    --font-size-body1: 22px;
+    --font-size-body2: 16px;
+    --font-size-h1: 52px;
+    --font-size-h2: 44px;
+    --font-size-h3: 28px;
+    --font-size-st1: 68px;
+    --font-size-st2: 60px;
+    --font-size-st3: 52px;
+    --font-size-st4: 36px;
+    --font-size-st5: 28px;
+    --font-size-st6: 20px;
     --font-size-btn: 16px;
     --font-size-link: 14px;
     --font-size-UI: 14px;

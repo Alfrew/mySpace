@@ -1,0 +1,128 @@
+/* * {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --main-color: #ff6c33;
+  --accent-color: #e7a054;
+  --dark-color: #3f4440;
+  --light-color: #e1e6ea;
+}
+
+a {
+  color: var(--main-color);
+}
+
+.color-main {
+  color: var(--main-color);
+}
+.color-accent {
+  color: var(--accent-color);
+}
+.color-dark {
+  color: var(--dark-color);
+}
+.color-light {
+  color: var(--light-color);
+}
+.color-white {
+  color: #ffffff;
+}
+
+.bg-main {
+  background-color: var(--main-color);
+}
+.bg-accent {
+  background-color: var(--accent-color);
+}
+.bg-dark {
+  background-color: var(--dark-color);
+}
+.bg-light {
+  background-color: var(--light-color);
+}
+.bg-gradient-dark {
+  background: linear-gradient(180deg, rgba(225, 230, 234, 0) 60%, var(--dark-color) 95%);
+}
+
+.h1 {
+  font-size: 64px;
+  margin-bottom: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.h2 {
+  font-size: 48px;
+  margin-bottom: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.h3 {
+  font-size: 40px;
+  margin-bottom: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button {
+  display: block;
+  background-color: var(--dark-color);
+  font-size: 16px;
+  padding: 16px 0px;
+  text-align: center;
+  width: 255px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+.hollow-button {
+  display: block;
+  border: 4px solid var(--dark-color);
+  padding: 12px 0px;
+  text-align: center;
+  font-size: 16px;
+  width: 255px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: var(--dark-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-item .hollow-button {
+  border-color: white;
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-end {
+  text-align: end;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.sub-text {
+  font-size: 14px;
+}
+.sub-text a {
+  font-size: 14px;
+  color: var(--accent-color);
+}
+
+#footerList li a {
+  color: var(--accent-color);
+}
+
+.line {
+  height: 2px;
+  background-color: var(--dark-color);
+  margin-bottom: 8px;
+}
+
+ */

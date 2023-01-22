@@ -1,9 +1,5 @@
 @import "alfrewDesign/_all.scss";
 
-.height-600 {
-  min-height: 600px;
-}
-
 /** LANDING CONTAINER  ***************************************************************************/
 #iconList {
   height: 48px;
@@ -21,47 +17,6 @@
     }
   }
 }
-
-#bubbles {
-  height: 300px;
-  background-image: url("../img/BubblesWhite.svg");
-  background-repeat: repeat-x;
-  background-color: $main-color;
-  transform: rotateX(180deg);
-}
-
-/** MY WORK CONTAINER  ***************************************************************************/
-#myWork {
-  background-image: linear-gradient($main-color-tint-transpa, $main-color-tint-transpa), url(../img/paper.jpg);
-}
-
-/** PORTFOLIO CONTAINER  *************************************************************************/
-
-#label {
-  display: inline-block;
-  padding: 16px 16px 4px;
-  border-top-left-radius: 28px;
-  border-top-right-radius: 28px;
-  background-color: $background-color;
-  color: $main-color;
-  /* box-shadow: 0px 0px 10px 5px $background-primary-color; */
-}
-
-#projectList {
-  min-height: 50vh;
-}
-
-.project-role {
-  display: inline-block;
-  border-radius: 24px;
-  padding: 12px;
-  background-color: $darker-grey;
-  font-weight: bold;
-  color: $main-text-contrast;
-}
-
-/** FOOTER CONTAINER  ****************************************************************************/
-
 #footerList li {
   margin: 0px 16px;
   font-size: 20px;
@@ -78,10 +33,15 @@
   }
 }
 
-/** ABOUT ME PAGE  ****************************************************************************/
-#epicLogo {
-  background-image: url(../img/epicode.webp);
-  height: 40px;
-  width: 40px;
-  background-size: cover;
+.logo {
+  height: 48px;
+  width: 48px;
+  background-color: $main-color;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+footer .logo {
+  height: 72px;
+  width: 72px;
 }

@@ -5,22 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Alfredo Filigheddu Web Developer landing page">
-  <meta name="theme-color" content="#e35639" />
-  <title>Alfredo Filigheddu</title>
+  <meta name="description" content="Hai bisogno di un sito su misura? Io sono il professionista che fa al caso tuo">
+  <meta name="theme-color" content="#ff6c33" />
+  <title>Alfredo Filigheddu Freelance Web Developer</title>
+
   <link rel="shortcut icon" href="assets/img/Logo1.svg" type="image/x-icon">
   <link rel="icon" href="assets/img/Logo2.png" sizes="32x32">
   <link rel="icon" href="assets/img/Logo2.png" sizes="192x192">
   <link rel="apple-touch-icon" sizes="192x192" href="assets/img/Logo2.png">
+
   <link type='text/css' rel="stylesheet" href="assets/scss/style.css">
   <link type='text/css' rel='stylesheet'
     href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css'>
 </head>
 
-<body class="bg-background">
-  <header class="sticky-top-md">
+<body class="bg-light">
+  <header class="sticky-top">
     <nav class="navbar-expand-round-md">
-      <a class="nav-brand" href="index.html"><img src="assets/img/Logo1.svg" width="64px" alt="Brand Logo"></a>
       <label for="navRoundCheck" class="fixed-top invisible">Burger menu</label>
       <input id="navRoundCheck" class="nav-check-round" type="checkbox">
       <ul class="burger-round">
@@ -29,15 +30,23 @@
         <li class="line3"></li>
       </ul>
       <div class="dot"></div>
+
+      <a class="nav-brand" href="index.html">
+        <div class="logo mr-1"></div>
+        <span>Alfredo <br>
+          Filigheddu
+        </span>
+      </a>
+
       <div class="navbar-collapse-round">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Work</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <!-- <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li> -->
-          <li class="nav-item"><a class="nav-link" href="#contacts">Contatti</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacts">Blog</a></li>
           <li class="nav-item">
-            <a class="nav-link" href="mailto:filigheddualfredo@gmail.com" target="_blank">
-              <i class="bi bi-envelope-fill"></i>
+            <a class="nav-link hollow-button border-white" href="">
+              Contattami
             </a>
           </li>
         </ul>
@@ -46,132 +55,53 @@
   </header>
 
   <main>
-    <!-- LANDING -->
-    <section class="d-flex flex-column">
-      <div class="d-flex flex-column justify-center align-center bg-main height-600 text-center">
-        <div>
-          <h1 class="h1 color-main-contrast">Alfredo Filigheddu</h1>
-          <h2 class="h3 color-darker-gray">Artigiano digitale</h2>
+    <!-- Hero section  -->
 
-          <ul id="iconList" class="d-flex justify-evenly">
-            <li>
-              <a href="mailto:filigheddualfredo@gmail.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/alfredo-filigheddu" target="_blank"><i
-                  class="bi bi-linkedin"></i></a>
-            </li>
-            <li>
-              <a href="https://www.github.com/Alfrew" target="_blank"><i class="bi bi-github"></i></a>
-            </li>
-            <!-- <li>
-<a href=""><i class="bi bi-facebook" target="_blank"></i></a>
-</li>
-<li>
-<a href=""><i class="bi bi-instagram" target="_blank"></i></a>
-</li>
-<li>
-<a href=""><i class="bi bi-twitter" target="_blank"></i></a>
-</li> -->
-          </ul>
-        </div>
-      </div>
-      <div id="bubbles"></div>
-    </section>
 
-    <!-- ABOUT ME -->
-    <section class="row justify-evenly py-5 height-600">
-      <div class="col-5 col-3-md mb-4">
-        <img class="responsive-pic round-1" src="assets/img/DSC05563.JPG" alt="Alfredo Filigheddu Portrait">
-      </div>
-
-      <div class="col-10 col-6-md col-5-xl">
-        <h2 class="h2">Ciao! Mi chiamo Alfredo.<br />
-          Sono un <em>Web Designer</em> & <em>Front-End Developer</em>.
-        </h2>
-        <p class="body1">Ho 22 anni, vivo ad <em>Arzachena</em> e sono un <em>Web Developer</em> dal 2022.
-          Sono sempre stato una persona creativa e allo stesso tempo razionale.
-          Quando ho scoperto la programmazione Web ho capito che era la professione giusta nella quale trarre il
-          meglio da entrambi questi miei lati.
-        </p>
-      </div>
-    </section>
-
-    <!-- MY WORK -->
-    <section id="myWork" class="row justify-evenly py-5 bg-darker-grey color-main-contrast height-600">
-      <div class="col-10 col-6-md col-5-xl">
-        <h2 class="h2">Aiuto le imprese ad entrare nel web</h2>
-        <div>
-          <p class="body1">
-            Mi sono specializzato nella creazione di siti web per professionisti e piccole imprese. <br>
-            La tua impresa è unica e come tale necessita di un sito che ne esalti le caratteristiche e che lasci la
-            giusta impressione ai tuoi nuovi clienti. <br>
-            Per questo sconsiglio l'utilizzo di soluzioni a buon mercato che renderanno il tuo nuovo sito uno come
-            tanti. <br>
-            Io, come un artigiano, confezionerò un sito su misura per te e la tua impresa, seguendoti passo dopo passo
-            durante tutto il processo.
-          </p>
-
-        </div>
-      </div>
-
-      <div class="col-5 col-3-md d-none d-flex-md">
-        Picture
-      </div>
-    </section>
-
-    <!-- PORTFOLIO -->
-    <!-- <section id="portfolio" class="py-5 text-center">
-      <h3 class="h2 text-center">Alcuni dei miei lavori migliori</h3>
-      <ul id="projectList" class="row justify-around">
-
-        <li class="text-center col-11 col-5-sm col-4-lg col-3-xl">
-          <div id="AlexPileri" class="hover-tilt">SITE ICON</div>
-          <h3 class="h3 mb-1 color-main">ALEX PILERI</h3>
-          <p class="project-role">Web design/development</p>
-        </li>
-
-        <li class="text-center col-11 col-5-sm col-4-lg col-3-xl">
-          <div id="Elettrosarda" class="hover-tilt">SITE ICON</div>
-          <h3 class="h3 mb-1 color-main">ELETTROSARDA</h3>
-          <p class="project-role">Web design/development</p>
-        </li>
-      </ul>
-    </section> -->
-
-    <!-- CONTACTS -->
-    <section id="contacts" class="bg-main py-3 text-center text-left-md">
-      <h2 class="h2 text-center color-main-contrast">Contatti</h2>
-      <div class="row align-center justify-evenly">
-        <p class="col-10 col-3-md mb-3 body1 color-main-contrast">
-          Puoi contattarmi per espormi la tua idea o prendere un appuntamento tramite mail, cellulare o whatsapp.
-        </p>
-        <address class="col-10 col-3-md mb-3 color-main-contrast">
-          <h4 class="body1">EMAIL</h4>
-          <p><a class="color-white" href="mailto:filigheddualfredo@gmail.com">filigheddualfredo@gmail.com</a></p>
-          <h4 class="body1">CELLULARE</h4>
-          <p><a class="color-white" href="tel:+393382905566">+39 338 290 5566</a></p>
-          <h4 class="body1">INDIRIZZO</h4>
-          <p class="text-underline">Cannigione, Arzachena 07021 (SS)</p>
-        </address>
-      </div>
+    <!-- Call to action -->
+    <section class="d-flex flex-column align-center">
+      <p class="sub-title-6">Hai bisogno di un sito su misura?</p>
+      <p class="sub-title-1 uppercase color-main">Iniziamo</p>
+      <a href="/contacts.html" class="flat-button bg-dark color-light mb-1"
+        style="width: 248px; margin-right: 40px;">Prenota una call
+      </a>
+      <a href="mailto:filigheddualfredo@gmail.com" target="_blank" class="hollow-button"
+        style="width: 248px; margin-left: 40px;">Scrivimi una mail
+      </a>
     </section>
   </main>
 
-  <footer class="d-flex flex-column justify-evenly align-center py-3 bg-darker-grey">
+  <footer class="text-center color-accent">
+    <a href="index.html">
+      <div class="logo mb-5">
+      </div>
+    </a>
     <ul id="footerList" class="row justify-evenly mb-1">
       <li>
-        <a href="mailto:filigheddualfredo@gmail.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+        <a href="https://www.youtube.com/channel/UCLIJbzDooY8uqppBxe8pnKA" target="_blank">
+          <i class="bi bi-youtube color-accent"></i></a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/alfredo-filigheddu" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/alfredo-filigheddu" target="_blank"><i
+            class="bi bi-linkedin color-accent"></i></a>
       </li>
       <li>
-        <a href="https://www.github.com/Alfrew" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.github.com/Alfrew" target="_blank"><i class="bi bi-github color-accent"></i></a>
       </li>
     </ul>
-    <p class="body2 color-white">&copy;2022 Alfredo Filigheddu</p>
+
+    <hr>
+
+    <div class="mx-4">
+      <p class="mb-1">&copy; Alfredo Filigheddu</p>
+      <p>Progettato e sviluppato personalmente con <a href="https://www.figma.com" class="color-accent"
+          target="_blank">Figma</a> e
+        <a href="https://code.visualstudio.com" class="color-accent" target="_blank">Visual Studio Code</a>
+      </p>
+    </div>
   </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
