@@ -15,6 +15,7 @@ h2,
 h3,
 .h3 {
   @include heading($font-size-h3);
+  text-transform: none;
 }
 
 @mixin sub-title($font-size) {
@@ -45,7 +46,7 @@ p,
 .body1 {
   font-size: $font-size-body1;
   margin-bottom: $spacing-unit * 2;
-  // line-height: $line-height-body;
+  line-height: $line-height-body;
 }
 footer p,
 .body2 {
@@ -88,6 +89,22 @@ a,
 }
 .capitalize {
   text-transform: capitalize;
+}
+.nonecase {
+  text-transform: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+.unbold {
+  font-weight: normal;
+}
+.italic {
+  font-style: italic;
+}
+.unitalic {
+  font-style: normal;
 }
 
 @each $point in $points {

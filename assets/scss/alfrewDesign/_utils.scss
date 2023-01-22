@@ -13,6 +13,28 @@ hr {
   border: 1px solid $dark-color;
   margin: $spacing-unit 0px;
 }
+.vr {
+  border: 1px solid $dark-color;
+  margin: $spacing-unit * 3 auto;
+  width: 0px;
+  height: 100px;
+}
+
+ul.list {
+  list-style-image: url(../img/IconWEB.svg);
+  font-size: $font-size-body1;
+  font-weight: bold;
+  margin-left: $spacing-unit * 3;
+  margin-bottom: $spacing-unit * 5;
+
+  li {
+    padding-left: $spacing-unit * 2;
+    margin-bottom: $spacing-unit;
+    &::marker {
+      font-size: $spacing-unit * 3;
+    }
+  }
+}
 
 .flat-button {
   padding: $spacing-unit * 2 $spacing-unit * 3;
