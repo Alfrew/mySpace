@@ -1236,6 +1236,16 @@ ul.list li::marker {
   text-decoration: none;
 }
 
+.accordion {
+  margin-bottom: 8px;
+}
+.accordion + .panel {
+  margin-bottom: 24px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 250ms ease-out;
+}
+
 .m-0 {
   margin: 0px;
 }

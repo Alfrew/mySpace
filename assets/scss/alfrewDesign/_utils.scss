@@ -59,6 +59,16 @@ ul.list {
   text-decoration: none;
 }
 
+.accordion {
+  margin-bottom: 8px;
+  + .panel {
+    margin-bottom: 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 250ms ease-out;
+  }
+}
+
 // .square-pic {
 //   aspect-ratio: 1/1;
 // }
