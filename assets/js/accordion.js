@@ -1,6 +1,5 @@
 let acc = document.getElementsByClassName("accordion");
 let i;
-console.log(acc.item(acc[1]));
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {

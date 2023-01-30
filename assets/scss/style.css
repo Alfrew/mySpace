@@ -1092,6 +1092,7 @@ a,
   text-transform: none;
 }
 
+b,
 .bold {
   font-weight: bold;
 }
@@ -1237,7 +1238,31 @@ ul.list li::marker {
 }
 
 .accordion {
-  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.accordion h3 {
+  width: 80%;
+}
+.accordion .plus {
+  height: 32px;
+  width: 32px;
+}
+.accordion .plus span {
+  background-color: #ff6c33;
+  width: 6px;
+  height: 32px;
+  position: absolute;
+  transform: rotate(90deg);
+}
+.accordion .plus :first-child {
+  transform: rotate(0deg);
+  transition: transform 250ms;
+}
+.accordion.active .plus :first-child {
+  transform: rotate(90deg);
 }
 .accordion + .panel {
   margin-bottom: 24px;

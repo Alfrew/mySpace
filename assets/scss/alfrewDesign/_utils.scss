@@ -60,7 +60,34 @@ ul.list {
 }
 
 .accordion {
-  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+
+  h3 {
+    width: 80%;
+  }
+
+  .plus {
+    height: 32px;
+    width: 32px;
+    span {
+      background-color: $main-color;
+      width: 6px;
+      height: 32px;
+      position: absolute;
+      transform: rotate(90deg);
+    }
+    :first-child {
+      transform: rotate(0deg);
+      transition: transform 250ms;
+    }
+  }
+  &.active .plus :first-child {
+    transform: rotate(90deg);
+  }
+
   + .panel {
     margin-bottom: 24px;
     max-height: 0;
