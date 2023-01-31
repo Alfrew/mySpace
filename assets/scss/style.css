@@ -1264,11 +1264,30 @@ ul.list li::marker {
 .accordion.active .plus :first-child {
   transform: rotate(90deg);
 }
-.accordion + .panel {
+.accordion ~ .panel {
   margin-bottom: 24px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 250ms ease-out;
+}
+
+.carousel-title {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  opacity: 0.7;
+  transition: opacity 500ms;
+}
+.carousel-title.active {
+  transition: opacity 500ms 500ms;
+  opacity: 1;
+}
+.carousel-title ~ .carousel-content {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.carousel-title ~ .carousel-content.active {
+  transition: opacity 500ms 500ms;
+  opacity: 1;
 }
 
 .m-0 {
