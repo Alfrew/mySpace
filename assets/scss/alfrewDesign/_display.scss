@@ -85,6 +85,7 @@
     .col-#{$i} {
       min-width: calc($i * 8.33%);
       width: calc($i * 8.33%);
+      padding-right: 16px;
     }
   }
   @each $point in $points {
@@ -94,6 +95,7 @@
           .col-#{$i}-#{$point} {
             min-width: calc($i * 8.33%);
             width: calc($i * 8.33%);
+            padding-right: 16px;
           }
         }
       }

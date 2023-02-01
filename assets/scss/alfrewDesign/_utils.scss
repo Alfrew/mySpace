@@ -5,6 +5,9 @@
 
 section {
   padding: $spacing-unit * 5 $spacing-unit * 2;
+  @include for-size("lg") {
+    padding: $spacing-unit * 16;
+  }
 }
 footer {
   padding: $spacing-unit * 7 $spacing-unit * 7 $spacing-unit * 2;
@@ -41,6 +44,8 @@ ul.list {
   text-transform: uppercase;
   text-align: center;
   font-size: $font-size-btn;
+  min-width: 160px;
+  cursor: pointer;
 
   display: inline-block;
   text-decoration: none;
@@ -54,6 +59,7 @@ ul.list {
   font-size: $font-size-btn;
   color: $dark-color;
   font-weight: bold;
+  cursor: pointer;
 
   display: inline-block;
   text-decoration: none;
@@ -99,21 +105,22 @@ ul.list {
 .carousel-title {
   text-transform: uppercase;
   margin-bottom: 8px;
-  opacity: 0.7;
+  opacity: 0.6;
   transition: opacity 500ms;
+  cursor: pointer;
   &.active {
     transition: opacity 500ms 500ms;
     opacity: 1;
   }
+}
+.carousel-content {
+  top: 0;
+  opacity: 0;
+  transition: opacity 500ms;
 
-  ~ .carousel-content {
-    opacity: 0;
-    transition: opacity 500ms;
-
-    &.active {
-      transition: opacity 500ms 500ms;
-      opacity: 1;
-    }
+  &.active {
+    transition: opacity 500ms 500ms;
+    opacity: 1;
   }
 }
 

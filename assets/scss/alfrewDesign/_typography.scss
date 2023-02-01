@@ -23,23 +23,31 @@ h3,
   font-size: $font-size;
   font-weight: bold;
 }
-.sub-title-1 {
-  @include sub-title($font-size-st1);
-}
-.sub-title-2 {
-  @include sub-title($font-size-st2);
-}
-.sub-title-3 {
-  @include sub-title($font-size-st3);
-}
-.sub-title-4 {
-  @include sub-title($font-size-st4);
-}
-.sub-title-5 {
-  @include sub-title($font-size-st5);
-}
-.sub-title-6 {
-  @include sub-title($font-size-st6);
+@each $point in $points {
+  $infix: $point;
+  @if $point != "" {
+    $infix: "-#{$point}";
+  }
+  @include for-size($point) {
+    .sub-title-1#{$infix} {
+      @include sub-title($font-size-st1);
+    }
+    .sub-title-2#{$infix} {
+      @include sub-title($font-size-st2);
+    }
+    .sub-title-3#{$infix} {
+      @include sub-title($font-size-st3);
+    }
+    .sub-title-4#{$infix} {
+      @include sub-title($font-size-st4);
+    }
+    .sub-title-5#{$infix} {
+      @include sub-title($font-size-st5);
+    }
+    .sub-title-6#{$infix} {
+      @include sub-title($font-size-st6);
+    }
+  }
 }
 
 p,

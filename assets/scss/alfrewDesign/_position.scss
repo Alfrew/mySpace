@@ -45,6 +45,10 @@ $positions: (
   left: 0;
   z-index: 1030;
 }
+@include make-querie-classes("sticky-navbar") {
+  position: sticky;
+  top: 96px;
+}
 @include make-querie-classes("sticky-top") {
   position: sticky;
   top: 0;
